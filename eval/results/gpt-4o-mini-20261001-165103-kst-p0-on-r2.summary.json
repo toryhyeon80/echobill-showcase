@@ -1,0 +1,588 @@
+{
+  "run": {
+    "id": "gpt-4o-mini-20261001-165103-kst-p0-on-r2",
+    "executed_at": "2026-10-01T16:55:29+09:00",
+    "model": "gpt-4o-mini",
+    "golden_file": "data/golden/golden_dev.jsonl",
+    "dataset_version": "v2.5",
+    "scoring_version": "v1.2",
+    "response_models": [
+      "gpt-4o-mini-2024-07-18"
+    ],
+    "dataset_sha256": "570110e27ff09a765b09570f39c1bc62980196fcfa40e7f5020f35bacad4ba50",
+    "prompt_sha256": "43ecf4886a074cf20e389a40f2da0369cf05126a9f9414ed3fa381368903ba4d",
+    "scorer_sha256": "5f803e14a3d53127238720c1e651063b3d9d4e62ae6b6c0509cbcbe4ed3151ca",
+    "call_settings": {
+      "temperature": 0.0,
+      "timeout_seconds": 5.0,
+      "max_tokens": 800,
+      "max_retries": 0,
+      "deadline": "whole-call deadline = timeout_seconds (parse_llm)"
+    },
+    "prompt_file": "configs/prompts/parse_llm_system.txt",
+    "review_status": {
+      "검수 완료": 60
+    },
+    "split": "개발용 Golden",
+    "ko_numeral_normalize": true,
+    "normalizer_version": "ko-num-1.1",
+    "git_commit": "7be8d643ed63012de66b74ad9f61f0a761905561",
+    "git_dirty": false
+  },
+  "measurements": {
+    "latency_ms": {
+      "count": 60,
+      "p50": 1098,
+      "p95": 1563
+    },
+    "over_deadline": {
+      "deadline_ms": 5000,
+      "count": 0,
+      "total": 60
+    },
+    "tokens": {
+      "prompt": 28575,
+      "completion": 3539,
+      "total": 32114
+    }
+  },
+  "cost_estimate_usd": 0.00640965,
+  "metrics": {
+    "dataset": {
+      "total": 60,
+      "by_outcome": {
+        "추가 확인 필요": 18,
+        "정상 구조화 가능": 42
+      },
+      "by_difficulty": {
+        "복잡·생략 표현": 31,
+        "명확한 표현": 29
+      }
+    },
+    "generation": {
+      "succeeded": 60,
+      "failed": 0,
+      "total": 60
+    },
+    "transaction_exact": {
+      "correct": 40,
+      "total": 42,
+      "rate": 0.952381
+    },
+    "amount_exact": {
+      "overall": {
+        "correct": 55,
+        "total": 56,
+        "rate": 0.982143
+      },
+      "stated": {
+        "correct": 39,
+        "total": 40,
+        "rate": 0.975
+      },
+      "derived": {
+        "correct": 16,
+        "total": 16,
+        "rate": 1.0
+      }
+    },
+    "required_fields_micro": {
+      "tp": 243,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.987805,
+      "recall": 0.987805,
+      "f1": 0.987805
+    },
+    "optional_field_errors": {
+      "total_fp": 63,
+      "by_field": {
+        "unit": 12,
+        "unit_price": 37,
+        "amount": 14
+      }
+    },
+    "space_normalization": {
+      "field_matches": 0,
+      "transaction_matches": 0
+    },
+    "confirmation_appropriateness": {
+      "status": "not_available",
+      "total": 18,
+      "reason": "validation response is not implemented"
+    },
+    "records": [
+      {
+        "id": "g-dev-001",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-002",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-003",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-004",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-005",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-006",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-007",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": false,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-008",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-009",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-010",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-011",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-012",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-013",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "g-dev-014",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-015",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-016",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "g-dev-017",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-018",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "g-dev-019",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-020",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "g-dev-021",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-022",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-023",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-024",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-025",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-026",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 4
+      },
+      {
+        "id": "g-dev-027",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-028",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-029",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-030",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-031",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-032",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-033",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-034",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-035",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": null,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "g-dev-036",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-037",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-038",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": null,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-039",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-040",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-041",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-042",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-043",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-044",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-045",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-046",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-047",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-048",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-049",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-050",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-051",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-052",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-053",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-054",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-055",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 12
+      },
+      {
+        "id": "g-dev-056",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 12
+      },
+      {
+        "id": "g-dev-057",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": null,
+        "optional_field_fp": 3
+      },
+      {
+        "id": "g-dev-058",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": null,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "g-dev-059",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "g-dev-060",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      }
+    ],
+    "format_errors": [],
+    "optional_field_missing": {
+      "total": 19,
+      "by_field": {
+        "unit": 13,
+        "unit_price": 1,
+        "amount": 5
+      }
+    },
+    "field_accuracy": {
+      "counterparty": {
+        "correct": 58,
+        "total": 58,
+        "rate": 1.0
+      },
+      "total_amount": {
+        "correct": 55,
+        "total": 56,
+        "rate": 0.982143
+      },
+      "credit": {
+        "correct": 56,
+        "total": 57,
+        "rate": 0.982456
+      },
+      "name": {
+        "correct": 72,
+        "total": 75,
+        "rate": 0.96
+      },
+      "amount": {
+        "correct": 51,
+        "total": 56,
+        "rate": 0.910714
+      },
+      "qty": {
+        "correct": 67,
+        "total": 69,
+        "rate": 0.971014
+      },
+      "unit": {
+        "correct": 53,
+        "total": 67,
+        "rate": 0.791045
+      },
+      "unit_price": {
+        "correct": 27,
+        "total": 28,
+        "rate": 0.964286
+      }
+    }
+  }
+}

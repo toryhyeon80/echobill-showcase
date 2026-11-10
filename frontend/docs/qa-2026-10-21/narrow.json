@@ -1,0 +1,66 @@
+[
+  {
+    "name": "home",
+    "header": 48,
+    "pageWidth": 305,
+    "tab": {
+      "bottom": 568,
+      "height": 65,
+      "left": 0,
+      "right": 305,
+      "top": 503,
+      "width": 305,
+      "x": 0,
+      "y": 503
+    },
+    "viewport": 320
+  },
+  {
+    "name": "confirm",
+    "header": 48,
+    "pageWidth": 305,
+    "tab": {
+      "bottom": 568,
+      "height": 65,
+      "left": 0,
+      "right": 305,
+      "top": 503,
+      "width": 305,
+      "x": 0,
+      "y": 503
+    },
+    "viewport": 320
+  },
+  {
+    "name": "tax",
+    "header": 48,
+    "pageWidth": 305,
+    "tab": {
+      "bottom": 568,
+      "height": 65,
+      "left": 0,
+      "right": 305,
+      "top": 503,
+      "width": 305,
+      "x": 0,
+      "y": 503
+    },
+    "viewport": 320
+  },
+  {
+    "name": "tax-preview",
+    "header": 48,
+    "pageWidth": 305,
+    "tab": {
+      "bottom": 568,
+      "height": 65,
+      "left": 0,
+      "right": 305,
+      "top": 503,
+      "width": 305,
+      "x": 0,
+      "y": 503
+    },
+    "viewport": 320
+  }
+]

@@ -1,0 +1,61 @@
+# 측정 비용 계산용 모델 단가 (DL-11, eval/run_baseline.py 전용 — 운영 코드는 읽지 않음)
+# 공식 가격표에서 확인한 Standard(유료) 텍스트 단가, USD / 1M 토큰. 확인 못 한 값은 비워 둔다 (추측 금지)
+# Gemini 출력 단가는 thinking 토큰 포함 (가격표 기준)
+cost_cap_usd: 1.0   # PM 10/7: 3모델 전체 상한
+
+models:
+  gpt-4o-mini:
+    input_usd_per_1m: 0.15
+    output_usd_per_1m: 0.60
+    source: https://developers.openai.com/api/docs/pricing
+    checked_at: "2026-10-07"
+  gpt-4.1-mini:
+    input_usd_per_1m: 0.40
+    output_usd_per_1m: 1.60
+    source: https://developers.openai.com/api/docs/pricing
+    checked_at: "2026-10-07"
+  gemini-3.1-flash-lite:
+    input_usd_per_1m: 0.25
+    output_usd_per_1m: 1.50
+    source: https://ai.google.dev/gemini-api/docs/pricing
+    checked_at: "2026-10-07"
+  HCX-007:
+    # HyperCLOVA X (CLOVA Studio 인퍼런스 요금, 한국 리전, PM 10/22 화면 확인): 1,000 토큰당 입력 1.25원·출력 5원
+    # = 1M당 1,250원·5,000원. 1달러 1,300원으로 나눠 USD로 적음 (실제 환율보다 낮게 잡아 상한을 넉넉히)
+    input_usd_per_1m: 0.97
+    output_usd_per_1m: 3.85
+    source: https://www.ncloud.com/product/aiService/clovaStudio#pricing
+    checked_at: "2026-10-22"
+  claude-haiku-5-5:
+    # 프롬프트 10만 토큰 이하 단가 (장부 문장은 한참 아래). 이 모델은 비추론 설정(thinking=disabled)으로 측정
+    input_usd_per_1m: 0.10
+    output_usd_per_1m: 0.50
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+    checked_at: "2026-10-22"
+
+# STT 단가, USD / 녹음 1분 (eval/run_voice_e2e.py 전용 — 상한은 위 cost_cap_usd를 같이 쓴다).
+# 공식 가격표를 확인한 사람이 값과 확인 날짜를 채운다. 비어 있으면 run_voice_e2e.py는 실행을 거부한다 (추측 금지)
+stt_models:
+  whisper-1:
+    usd_per_minute: 0.006  # Transcription models 표의 Whisper 행 (분당 $0.006)
+    source: https://developers.openai.com/api/docs/pricing
+    checked_at: "2026-10-13"
+  # 분당 단가는 OpenAI 가격표의 추정치 — 실제 청구는 토큰 기준(오디오 입력·텍스트 출력)
+  gpt-4o-transcribe:
+    usd_per_minute: 0.006  # Transcription models 표 (분당 추정 $0.006)
+    source: https://developers.openai.com/api/docs/pricing
+    checked_at: "2026-10-15"
+  gpt-4o-mini-transcribe:
+    usd_per_minute: 0.003  # Transcription models 표 (분당 추정 $0.003)
+    source: https://developers.openai.com/api/docs/pricing
+    checked_at: "2026-10-15"
+  # 업체 비교 (eval/run_stt_compare.py, PM 10/20) — 공식 요금표 확인 전이라 비워 둠 (추측 금지).
+  # 비어 있으면 보고서에 "단가 미확인"과 사용 초만 적는다. CLOVA는 콘솔 Usage 메뉴의 실제 청구로 확인
+  clova-speech-short:
+    usd_per_minute:
+    source: https://www.ncloud.com/product/aiService/clovaSpeech
+    checked_at:
+  rtzr-sommers:
+    usd_per_minute:  # 가입 무료 600분 안에서 사용 (비교는 80분 이내)
+    source: https://developers.rtzr.ai/
+    checked_at:

@@ -1,0 +1,22 @@
+# 코드 소유자 — main 브랜치 보호에서 "Require review from Code Owners"로 강제한다.
+# CLAUDE.md §1.5: 코드(backend·frontend·배포 설정)는 작성자가 아닌 사람의 승인 필요,
+# 문서·테스트·Golden/Seed 데이터는 PM 셀프 머지 가능 → 아래에서 소유자 없음으로 둔다.
+# 경로마다 2명 이상: 작성자는 자기 PR을 승인할 수 없어서, 다른 한 명이 승인한다.
+# 나중 줄이 앞 줄보다 우선한다.
+
+# 코드
+/backend/        @toryhyeon80 @choi0310 @gyeong061
+/frontend/       @toryhyeon80 @hayan0308
+/configs/        @toryhyeon80 @gyeong061
+/eval/           @toryhyeon80 @gyeong061
+
+# 배포·CI 설정 (main 머지 = 운영 자동 배포)
+/.github/        @toryhyeon80 @choi0310
+/Dockerfile      @toryhyeon80 @choi0310
+/.dockerignore   @toryhyeon80 @choi0310
+/railway.json    @toryhyeon80 @choi0310
+
+# 테스트는 소유자 없음 (PM 테스트·데이터 PR 셀프 머지, CLAUDE.md §1.5)
+/backend/tests/
+/eval/tests/
+/frontend/tests/

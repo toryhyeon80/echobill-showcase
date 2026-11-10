@@ -1,0 +1,1233 @@
+{
+  "sentences": 60,
+  "mini_errors": 0,
+  "wrong_saved_off": [
+    "g-dev-028"
+  ],
+  "wrong_saved_on": [
+    "g-dev-028"
+  ],
+  "new_questions": [
+    "g-dev-026"
+  ],
+  "needless_questions": [],
+  "second_calls": 7,
+  "second_failures": [],
+  "second_ms_p50": 1329,
+  "second_ms_p95": 1432,
+  "rows": [
+    {
+      "id": "g-dev-001",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 2761,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-002",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1025,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-003",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 898,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-004",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1037,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-005",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1198,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-006",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1221,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-007",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1432,
+      "asked": [
+        "cascade_total_amount"
+      ],
+      "mini_ms": 974,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-008",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1207,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-009",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1806,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-010",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 906,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-011",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1091,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-012",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1612,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-013",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1355,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "g-dev-014",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1160,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-015",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1091,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-016",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1510,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-017",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1373,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-018",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1389,
+      "asked": [],
+      "mini_ms": 1124,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-019",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 945,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-020",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1508,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-021",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1270,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-022",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1340,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-023",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1300,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-024",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 964,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-025",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1072,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-026",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1099,
+      "asked": [
+        "cascade_counterparty",
+        "cascade_item_name"
+      ],
+      "mini_ms": 1369,
+      "off_status": 200,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-027",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1721,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-028",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1360,
+      "asked": [],
+      "mini_ms": 995,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": true
+    },
+    {
+      "id": "g-dev-029",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1477,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-030",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1227,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-031",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1391,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-032",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1816,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-033",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1081,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-034",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1231,
+      "asked": [
+        "cascade_item_name"
+      ],
+      "mini_ms": 1222,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-035",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1198,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-036",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 2739,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-037",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1125,
+      "asked": [
+        "cascade_total_amount"
+      ],
+      "mini_ms": 1291,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-038",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 661,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-039",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 942,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-040",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1072,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-041",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1027,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-042",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1013,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-043",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1032,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-044",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1048,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-045",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1070,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-046",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1054,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-047",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1136,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-048",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1196,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-049",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1329,
+      "asked": [
+        "cascade_item_qty"
+      ],
+      "mini_ms": 1306,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "g-dev-050",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1117,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-051",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1014,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-052",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1371,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-053",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1356,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-054",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1346,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-055",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1933,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-056",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1504,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-057",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1198,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-058",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 999,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-059",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1263,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "g-dev-060",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1028,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    }
+  ],
+  "wall_seconds": 86.7,
+  "credit_wrong_off": [],
+  "credit_wrong_on": [],
+  "over_5s": [],
+  "tokens": {
+    "mini_in": 44415,
+    "mini_out": 3860,
+    "second_in": 2872,
+    "second_out": 804,
+    "mini_calls_no_usage": 0,
+    "second_calls_no_usage": 0
+  },
+  "cost_usd": {
+    "mini": 0.008978,
+    "second": 0.001924,
+    "total": 0.010902
+  },
+  "mini_error_types": {},
+  "per_sentence": {
+    "g-dev-001": {
+      "mini_in": 727,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 2893
+    },
+    "g-dev-002": {
+      "mini_in": 731,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1051
+    },
+    "g-dev-003": {
+      "mini_in": 730,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 925
+    },
+    "g-dev-004": {
+      "mini_in": 728,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1065
+    },
+    "g-dev-005": {
+      "mini_in": 731,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1225
+    },
+    "g-dev-006": {
+      "mini_in": 730,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1249
+    },
+    "g-dev-007": {
+      "mini_in": 727,
+      "mini_out": 49,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 398,
+          "out": 87
+        }
+      ],
+      "mini_wall_ms": 1003
+    },
+    "g-dev-008": {
+      "mini_in": 728,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1238
+    },
+    "g-dev-009": {
+      "mini_in": 726,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1833
+    },
+    "g-dev-010": {
+      "mini_in": 731,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 935
+    },
+    "g-dev-011": {
+      "mini_in": 735,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1110
+    },
+    "g-dev-012": {
+      "mini_in": 739,
+      "mini_out": 72,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1639
+    },
+    "g-dev-013": {
+      "mini_in": 739,
+      "mini_out": 75,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1384
+    },
+    "g-dev-014": {
+      "mini_in": 738,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1186
+    },
+    "g-dev-015": {
+      "mini_in": 734,
+      "mini_out": 71,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1110
+    },
+    "g-dev-016": {
+      "mini_in": 737,
+      "mini_out": 76,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1536
+    },
+    "g-dev-017": {
+      "mini_in": 732,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1402
+    },
+    "g-dev-018": {
+      "mini_in": 735,
+      "mini_out": 76,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 409,
+          "out": 152
+        }
+      ],
+      "mini_wall_ms": 1153
+    },
+    "g-dev-019": {
+      "mini_in": 735,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 966
+    },
+    "g-dev-020": {
+      "mini_in": 739,
+      "mini_out": 77,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1536
+    },
+    "g-dev-021": {
+      "mini_in": 743,
+      "mini_out": 95,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1298
+    },
+    "g-dev-022": {
+      "mini_in": 745,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1359
+    },
+    "g-dev-023": {
+      "mini_in": 737,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1330
+    },
+    "g-dev-024": {
+      "mini_in": 739,
+      "mini_out": 57,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 997
+    },
+    "g-dev-025": {
+      "mini_in": 744,
+      "mini_out": 76,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1103
+    },
+    "g-dev-026": {
+      "mini_in": 747,
+      "mini_out": 80,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 418,
+          "out": 155
+        }
+      ],
+      "mini_wall_ms": 1394
+    },
+    "g-dev-027": {
+      "mini_in": 730,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1748
+    },
+    "g-dev-028": {
+      "mini_in": 733,
+      "mini_out": 58,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 405,
+          "out": 106
+        }
+      ],
+      "mini_wall_ms": 1021
+    },
+    "g-dev-029": {
+      "mini_in": 739,
+      "mini_out": 73,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1506
+    },
+    "g-dev-030": {
+      "mini_in": 732,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1247
+    },
+    "g-dev-031": {
+      "mini_in": 730,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1412
+    },
+    "g-dev-032": {
+      "mini_in": 742,
+      "mini_out": 76,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1842
+    },
+    "g-dev-033": {
+      "mini_in": 744,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1103
+    },
+    "g-dev-034": {
+      "mini_in": 727,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 399,
+          "out": 97
+        }
+      ],
+      "mini_wall_ms": 1250
+    },
+    "g-dev-035": {
+      "mini_in": 736,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1226
+    },
+    "g-dev-036": {
+      "mini_in": 740,
+      "mini_out": 137,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 2770
+    },
+    "g-dev-037": {
+      "mini_in": 743,
+      "mini_out": 95,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 414,
+          "out": 97
+        }
+      ],
+      "mini_wall_ms": 1321
+    },
+    "g-dev-038": {
+      "mini_in": 726,
+      "mini_out": 24,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 689
+    },
+    "g-dev-039": {
+      "mini_in": 738,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 970
+    },
+    "g-dev-040": {
+      "mini_in": 734,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1102
+    },
+    "g-dev-041": {
+      "mini_in": 730,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1054
+    },
+    "g-dev-042": {
+      "mini_in": 731,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1040
+    },
+    "g-dev-043": {
+      "mini_in": 731,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1058
+    },
+    "g-dev-044": {
+      "mini_in": 739,
+      "mini_out": 72,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1077
+    },
+    "g-dev-045": {
+      "mini_in": 734,
+      "mini_out": 71,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1095
+    },
+    "g-dev-046": {
+      "mini_in": 744,
+      "mini_out": 76,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1081
+    },
+    "g-dev-047": {
+      "mini_in": 739,
+      "mini_out": 73,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1162
+    },
+    "g-dev-048": {
+      "mini_in": 742,
+      "mini_out": 76,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1222
+    },
+    "g-dev-049": {
+      "mini_in": 753,
+      "mini_out": 59,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 429,
+          "out": 110
+        }
+      ],
+      "mini_wall_ms": 1333
+    },
+    "g-dev-050": {
+      "mini_in": 757,
+      "mini_out": 59,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1142
+    },
+    "g-dev-051": {
+      "mini_in": 757,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1043
+    },
+    "g-dev-052": {
+      "mini_in": 769,
+      "mini_out": 78,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1393
+    },
+    "g-dev-053": {
+      "mini_in": 767,
+      "mini_out": 78,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1377
+    },
+    "g-dev-054": {
+      "mini_in": 768,
+      "mini_out": 80,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1367
+    },
+    "g-dev-055": {
+      "mini_in": 771,
+      "mini_out": 126,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1960
+    },
+    "g-dev-056": {
+      "mini_in": 770,
+      "mini_out": 126,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1531
+    },
+    "g-dev-057": {
+      "mini_in": 756,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1225
+    },
+    "g-dev-058": {
+      "mini_in": 759,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1024
+    },
+    "g-dev-059": {
+      "mini_in": 749,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1291
+    },
+    "g-dev-060": {
+      "mini_in": 748,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1056
+    }
+  },
+  "seed2_061": null,
+  "base": {
+    "commit": "3e69e0e + merge refs/pull/205/head 779fb17 (no commit)",
+    "prompt": "C:\\Users\\user\\Desktop\\말로해\\echobill\\echobill-final\\configs\\prompts\\parse_llm_system_p3.txt",
+    "second_model": "gemini-3.1-flash-lite",
+    "golden": "C:\\Users\\user\\Desktop\\말로해\\echobill\\echobill-final\\data\\golden\\golden_dev.jsonl"
+  }
+}

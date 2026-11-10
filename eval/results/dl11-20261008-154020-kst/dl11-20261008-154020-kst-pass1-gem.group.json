@@ -1,0 +1,22 @@
+{
+  "group_id": "dl11-20261008-154020-kst-pass1-gem",
+  "runs": [
+    {
+      "run_id": "dl11-20261008-154020-kst-pass1-gem-r1",
+      "transaction_correct": 39,
+      "amount_correct": 54,
+      "required_f1_pct": 97.9424,
+      "over_deadline_rate": 0.033333
+    }
+  ],
+  "median_run_id": "dl11-20261008-154020-kst-pass1-gem-r1",
+  "spread": {
+    "transaction_correct": 0,
+    "amount_correct": 0,
+    "required_f1_pct": 0.0
+  },
+  "unstable_record_ids": [],
+  "response_models": [
+    "gemini-3.1-flash-lite"
+  ]
+}

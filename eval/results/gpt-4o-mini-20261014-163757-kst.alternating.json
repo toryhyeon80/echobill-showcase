@@ -1,0 +1,81 @@
+{
+  "group_prefix": "gpt-4o-mini-20261014-163757-kst",
+  "conditions": [
+    {
+      "tag": "p0-on",
+      "overrides": {
+        "ko_numeral_normalize": true,
+        "llm_postprocess": false
+      }
+    },
+    {
+      "tag": "p3-on",
+      "overrides": {
+        "ko_numeral_normalize": true,
+        "llm_postprocess": false,
+        "llm_system_prompt_file": "configs/prompts/parse_llm_system_p3.txt",
+        "llm_transaction_type": true
+      }
+    }
+  ],
+  "repeat": 3,
+  "cost_estimate": {
+    "by_tag": {
+      "p0-on": 0.096929,
+      "p3-on": 0.107432
+    },
+    "total_usd": 0.204361,
+    "cap_usd": 1.0,
+    "basis": "upper bound: input chars as tokens, output = max tokens per call"
+  },
+  "order": [
+    {
+      "run_id": "gpt-4o-mini-20261014-163757-kst-p0-on-r1",
+      "tag": "p0-on",
+      "repeat_index": 1,
+      "started_at": "2026-10-14T16:37:57+09:00",
+      "finished_at": "2026-10-14T16:39:18+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261014-163757-kst-p3-on-r1",
+      "tag": "p3-on",
+      "repeat_index": 1,
+      "started_at": "2026-10-14T16:39:18+09:00",
+      "finished_at": "2026-10-14T16:40:37+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261014-163757-kst-p0-on-r2",
+      "tag": "p0-on",
+      "repeat_index": 2,
+      "started_at": "2026-10-14T16:40:37+09:00",
+      "finished_at": "2026-10-14T16:41:56+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261014-163757-kst-p3-on-r2",
+      "tag": "p3-on",
+      "repeat_index": 2,
+      "started_at": "2026-10-14T16:41:56+09:00",
+      "finished_at": "2026-10-14T16:43:13+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261014-163757-kst-p0-on-r3",
+      "tag": "p0-on",
+      "repeat_index": 3,
+      "started_at": "2026-10-14T16:43:13+09:00",
+      "finished_at": "2026-10-14T16:44:28+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261014-163757-kst-p3-on-r3",
+      "tag": "p3-on",
+      "repeat_index": 3,
+      "started_at": "2026-10-14T16:44:28+09:00",
+      "finished_at": "2026-10-14T16:45:49+09:00"
+    }
+  ],
+  "representative_run_ids": {
+    "p0-on": "gpt-4o-mini-20261014-163757-kst-p0-on-r1",
+    "p3-on": "gpt-4o-mini-20261014-163757-kst-p3-on-r1"
+  },
+  "git_commit": "a88c33878781db743f700b10cfc700f6cbabaee2",
+  "git_dirty": false
+}

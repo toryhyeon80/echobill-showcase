@@ -1,0 +1,22 @@
+{
+  "group_id": "dl11-20261008-154020-kst-pass1-mini",
+  "runs": [
+    {
+      "run_id": "dl11-20261008-154020-kst-pass1-mini-r1",
+      "transaction_correct": 39,
+      "amount_correct": 55,
+      "required_f1_pct": 98.7805,
+      "over_deadline_rate": 0.0
+    }
+  ],
+  "median_run_id": "dl11-20261008-154020-kst-pass1-mini-r1",
+  "spread": {
+    "transaction_correct": 0,
+    "amount_correct": 0,
+    "required_f1_pct": 0.0
+  },
+  "unstable_record_ids": [],
+  "response_models": [
+    "gpt-4o-mini-2024-07-18"
+  ]
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10/21 FE 화면 비교</title>
+<style>
+  body{font:18px/1.6 system-ui;color:#191f28;max-width:1000px;margin:24px auto;padding:20px;background:#f2f4f6;word-break:keep-all}
+  section{margin:40px 0}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,390px));gap:16px}figure{margin:0}img{width:100%;height:auto;background:white}figcaption{font-weight:bold;padding:8px 0}
+</style>
+<h1>FE 미리보기 ↔ 연결 화면 비교</h1>
+<p>2026-10-21 · 동일한 390×844 뷰포트. 왼쪽은 /design, 오른쪽은 가상 API를 연결한 실제 페이지입니다. 실제 로그인·입금·음성 호출은 없습니다.</p>
+<p>합성 거래명·금액·기록 수·선택 날짜는 다릅니다. 구조·헤더·간격·탭·조작 영역 비교 자료이며 픽셀 일치나 운영 데이터 검증 결과가 아닙니다. 가입 완료 화면은 공용 WelcomeView fixture입니다.</p>
+<p>헤더가 있는 화면의 행은 48px. 가로 넘침 없음. 세금계산서의 누락된 거래 월과 미리보기 하단 탭 위치를 수정했습니다. 로그인 연결 화면의 설정 미준비 안내는 로컬 카카오 환경변수가 없는 상태입니다.</p>
+<section><h2>로그인</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="login-preview.jpg" alt="로그인 미리보기"></figure><figure><figcaption>연결 화면</figcaption><img src="login-connected.jpg" alt="로그인 연결 화면"></figure></div></section>
+<section><h2>가입 완료</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="welcome-preview.jpg" alt="가입 완료 미리보기"></figure><figure><figcaption>연결 화면</figcaption><img src="welcome-connected.jpg" alt="가입 완료 공용 화면"></figure></div></section>
+<section><h2>기록 홈</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="home-preview.jpg" alt="홈 미리보기"></figure><figure><figcaption>연결 화면</figcaption><img src="home-connected.jpg" alt="최장32일 연결 홈"></figure></div></section>
+<section><h2>내용 확인</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="confirm-preview.jpg" alt="확인 미리보기"></figure><figure><figcaption>연결 화면</figcaption><img src="confirm-connected.jpg" alt="확인 연결 화면"></figure></div></section>
+<section><h2>400 보완</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="clarify-preview.jpg" alt="보완 미리보기"></figure><figure><figcaption>연결 화면</figcaption><img src="clarify-connected.jpg" alt="400 응답 후 실제 보완 화면"></figure></div></section>
+<section><h2>장부</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="ledger-preview.jpg" alt="장부 미리보기"></figure><figure><figcaption>연결 화면</figcaption><img src="ledger-connected.jpg" alt="장부 연결 화면"></figure></div></section>
+<section><h2>입금</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="payment-preview.jpg" alt="입금 미리보기"></figure><figure><figcaption>연결 화면</figcaption><img src="payment-connected.jpg" alt="입금 연결 화면"></figure></div></section>
+<section><h2>세금계산서</h2><div class="pair"><figure><figcaption>미리보기</figcaption><img src="tax-preview.jpg" alt="세금계산서 미리보기 수정 후"></figure><figure><figcaption>연결 화면</figcaption><img src="tax-connected.jpg" alt="세금계산서 연결 화면"></figure></div></section>
+<p>320×568 추가 확인: 홈·확인·세금계산서 실제 페이지와 세금계산서 미리보기의 가로 넘침 없음, 탭 하단 568px. iOS·Android 카톡의 키보드·Safe Area·마이크 품질은 실기기에서 별도로 확인해야 합니다.</p>
+</html>

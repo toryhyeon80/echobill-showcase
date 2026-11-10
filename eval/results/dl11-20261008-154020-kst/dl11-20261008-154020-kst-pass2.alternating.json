@@ -1,0 +1,86 @@
+{
+  "group_prefix": "dl11-20261008-154020-kst-pass2",
+  "conditions": [
+    {
+      "tag": "mini",
+      "overrides": {
+        "llm_model": "gpt-4o-mini"
+      }
+    },
+    {
+      "tag": "m41",
+      "overrides": {
+        "llm_model": "gpt-4.1-mini"
+      }
+    },
+    {
+      "tag": "gem",
+      "overrides": {
+        "provider": "gemini",
+        "llm_model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "repeat": 2,
+  "cost_estimate": {
+    "by_tag": {
+      "mini": 0.064619,
+      "m41": 0.172318,
+      "gem": 0.155699
+    },
+    "total_usd": 0.392636,
+    "cap_usd": 1.0,
+    "basis": "upper bound: input chars as tokens, output = max tokens per call"
+  },
+  "order": [
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-mini-r1",
+      "tag": "mini",
+      "repeat_index": 1,
+      "started_at": "2026-10-08T15:48:28+09:00",
+      "finished_at": "2026-10-08T15:49:51+09:00"
+    },
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-m41-r1",
+      "tag": "m41",
+      "repeat_index": 1,
+      "started_at": "2026-10-08T15:49:51+09:00",
+      "finished_at": "2026-10-08T15:50:55+09:00"
+    },
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-gem-r1",
+      "tag": "gem",
+      "repeat_index": 1,
+      "started_at": "2026-10-08T15:50:55+09:00",
+      "finished_at": "2026-10-08T15:55:52+09:00"
+    },
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-mini-r2",
+      "tag": "mini",
+      "repeat_index": 2,
+      "started_at": "2026-10-08T15:55:52+09:00",
+      "finished_at": "2026-10-08T15:57:13+09:00"
+    },
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-m41-r2",
+      "tag": "m41",
+      "repeat_index": 2,
+      "started_at": "2026-10-08T15:57:13+09:00",
+      "finished_at": "2026-10-08T15:58:17+09:00"
+    },
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-gem-r2",
+      "tag": "gem",
+      "repeat_index": 2,
+      "started_at": "2026-10-08T15:58:17+09:00",
+      "finished_at": "2026-10-08T16:03:16+09:00"
+    }
+  ],
+  "representative_run_ids": {
+    "mini": "dl11-20261008-154020-kst-pass2-mini-r2",
+    "m41": "dl11-20261008-154020-kst-pass2-m41-r2",
+    "gem": "dl11-20261008-154020-kst-pass2-gem-r2"
+  },
+  "git_commit": "e041e20bb3bc46bc91d8563ee88c7049c183e2a8",
+  "git_dirty": false
+}

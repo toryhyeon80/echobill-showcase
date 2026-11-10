@@ -1,0 +1,69 @@
+{
+  "group_prefix": "gpt-4o-mini-20261001-165103-kst",
+  "conditions": [
+    {
+      "tag": "p0-on",
+      "overrides": {
+        "ko_numeral_normalize": true
+      }
+    },
+    {
+      "tag": "p2-on",
+      "overrides": {
+        "ko_numeral_normalize": true,
+        "llm_system_prompt_file": "configs/prompts/parse_llm_system_v2.txt"
+      }
+    }
+  ],
+  "repeat": 3,
+  "order": [
+    {
+      "run_id": "gpt-4o-mini-20261001-165103-kst-p0-on-r1",
+      "tag": "p0-on",
+      "repeat_index": 1,
+      "started_at": "2026-10-01T16:51:03+09:00",
+      "finished_at": "2026-10-01T16:52:35+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261001-165103-kst-p2-on-r1",
+      "tag": "p2-on",
+      "repeat_index": 1,
+      "started_at": "2026-10-01T16:52:35+09:00",
+      "finished_at": "2026-10-01T16:54:04+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261001-165103-kst-p0-on-r2",
+      "tag": "p0-on",
+      "repeat_index": 2,
+      "started_at": "2026-10-01T16:54:04+09:00",
+      "finished_at": "2026-10-01T16:55:29+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261001-165103-kst-p2-on-r2",
+      "tag": "p2-on",
+      "repeat_index": 2,
+      "started_at": "2026-10-01T16:55:29+09:00",
+      "finished_at": "2026-10-01T16:56:56+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261001-165103-kst-p0-on-r3",
+      "tag": "p0-on",
+      "repeat_index": 3,
+      "started_at": "2026-10-01T16:56:56+09:00",
+      "finished_at": "2026-10-01T16:58:24+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261001-165103-kst-p2-on-r3",
+      "tag": "p2-on",
+      "repeat_index": 3,
+      "started_at": "2026-10-01T16:58:24+09:00",
+      "finished_at": "2026-10-01T16:59:55+09:00"
+    }
+  ],
+  "representative_run_ids": {
+    "p0-on": "gpt-4o-mini-20261001-165103-kst-p0-on-r2",
+    "p2-on": "gpt-4o-mini-20261001-165103-kst-p2-on-r1"
+  },
+  "git_commit": "7be8d643ed63012de66b74ad9f61f0a761905561",
+  "git_dirty": false
+}

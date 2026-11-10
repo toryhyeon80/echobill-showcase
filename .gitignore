@@ -1,0 +1,61 @@
+# Secrets & local env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+.npm
+
+# IDE / OS
+.claude/settings.local.json
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Audio originals (STT 후 즉시 삭제 — 로컬 잔존 방지)
+*.wav
+*.webm
+*.mp3
+*.m4a
+*.mp4
+*.aac
+*.ogg
+*.oga
+*.opus
+*.flac
+*.amr
+*.3gp
+*.caf
+!frontend/public/**
+
+# Misc
+*.log
+.cache/
+coverage/
+
+# 최종 평가용 Golden — 11/2 평가 전 레포 반입 금지 (기획서 §10 격리, 설계표 §5). 평가 후 git add -f
+data/golden/golden_test*
+data/golden/data_test.py
+data/golden/build_test.py
+
+# Local SQLite dev DB
+*.db

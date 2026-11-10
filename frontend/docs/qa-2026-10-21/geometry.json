@@ -1,0 +1,155 @@
+[
+  {
+    "name": "login-preview",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "login-connected",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "welcome-preview",
+    "header": null,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "welcome-connected",
+    "header": null,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "home-preview",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 375
+  },
+  {
+    "name": "home-connected",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 375
+  },
+  {
+    "name": "confirm-preview",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 375
+  },
+  {
+    "name": "confirm-connected",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 375
+  },
+  {
+    "name": "tax-preview",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "tax-connected",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "tax-preview",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "ledger-preview",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 375
+  },
+  {
+    "name": "ledger-connected",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 375
+  },
+  {
+    "name": "payment-connected",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "payment-preview",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "clarify-preview",
+    "header": null,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  },
+  {
+    "name": "clarify-connected",
+    "header": 48,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390
+  }
+]

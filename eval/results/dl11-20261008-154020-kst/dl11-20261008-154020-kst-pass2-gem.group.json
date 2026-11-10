@@ -1,0 +1,63 @@
+{
+  "group_id": "dl11-20261008-154020-kst-pass2-gem",
+  "runs": [
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-gem-r1",
+      "transaction_correct": 34,
+      "amount_correct": 45,
+      "required_f1_pct": 90.6667,
+      "over_deadline_rate": 0.2
+    },
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-gem-r2",
+      "transaction_correct": 18,
+      "amount_correct": 28,
+      "required_f1_pct": 62.6039,
+      "over_deadline_rate": 0.45
+    }
+  ],
+  "median_run_id": "dl11-20261008-154020-kst-pass2-gem-r2",
+  "spread": {
+    "transaction_correct": 16,
+    "amount_correct": 17,
+    "required_f1_pct": 28.0628
+  },
+  "unstable_record_ids": [
+    "g-dev-001",
+    "g-dev-002",
+    "g-dev-003",
+    "g-dev-004",
+    "g-dev-005",
+    "g-dev-009",
+    "g-dev-010",
+    "g-dev-011",
+    "g-dev-012",
+    "g-dev-013",
+    "g-dev-014",
+    "g-dev-015",
+    "g-dev-016",
+    "g-dev-017",
+    "g-dev-019",
+    "g-dev-021",
+    "g-dev-022",
+    "g-dev-025",
+    "g-dev-026",
+    "g-dev-028",
+    "g-dev-029",
+    "g-dev-030",
+    "g-dev-031",
+    "g-dev-032",
+    "g-dev-033",
+    "g-dev-034",
+    "g-dev-037",
+    "g-dev-039",
+    "g-dev-045",
+    "g-dev-046",
+    "g-dev-053",
+    "g-dev-054",
+    "g-dev-059"
+  ],
+  "response_models": [
+    "gemini-3.1-flash-lite"
+  ]
+}

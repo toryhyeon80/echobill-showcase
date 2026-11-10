@@ -1,0 +1,2584 @@
+{
+  "run": {
+    "scoring_version": "v1.3",
+    "golden_file": "data/golden/golden_dev.jsonl",
+    "dataset_sha256": "570110e27ff09a765b09570f39c1bc62980196fcfa40e7f5020f35bacad4ba50",
+    "parser": "rule (structure_utterance, llm_parse_enabled=false)",
+    "ko_numeral_normalize": true
+  },
+  "metrics": {
+    "transaction_exact": {
+      "correct": 7,
+      "total": 42,
+      "rate": 0.166667
+    },
+    "amount_exact": {
+      "correct": 39,
+      "total": 56,
+      "rate": 0.696429
+    },
+    "required_fields_micro_f1": 0.595556,
+    "normal_rejected_400": {
+      "count": 31,
+      "total": 42
+    },
+    "confirmation_appropriateness": {
+      "status": "complete",
+      "correct": 4,
+      "total": 18,
+      "rate": 0.222222,
+      "evaluated": 18,
+      "unavailable": 0
+    },
+    "credit_wrongly_confirmed": {
+      "count": 0,
+      "ids": []
+    }
+  },
+  "wrong_transaction_ids": [
+    "g-dev-002",
+    "g-dev-006",
+    "g-dev-008",
+    "g-dev-011",
+    "g-dev-012",
+    "g-dev-013",
+    "g-dev-014",
+    "g-dev-015",
+    "g-dev-016",
+    "g-dev-017",
+    "g-dev-018",
+    "g-dev-019",
+    "g-dev-021",
+    "g-dev-022",
+    "g-dev-023",
+    "g-dev-024",
+    "g-dev-025",
+    "g-dev-028",
+    "g-dev-029",
+    "g-dev-030",
+    "g-dev-031",
+    "g-dev-032",
+    "g-dev-033",
+    "g-dev-040",
+    "g-dev-044",
+    "g-dev-045",
+    "g-dev-046",
+    "g-dev-047",
+    "g-dev-048",
+    "g-dev-049",
+    "g-dev-050",
+    "g-dev-051",
+    "g-dev-052",
+    "g-dev-053",
+    "g-dev-054"
+  ],
+  "wrong_amount_ids": [
+    "g-dev-011",
+    "g-dev-013",
+    "g-dev-014",
+    "g-dev-016",
+    "g-dev-017",
+    "g-dev-018",
+    "g-dev-019",
+    "g-dev-020",
+    "g-dev-024",
+    "g-dev-025",
+    "g-dev-026",
+    "g-dev-030",
+    "g-dev-032",
+    "g-dev-033",
+    "g-dev-040",
+    "g-dev-046",
+    "g-dev-048"
+  ],
+  "rejected_400": {
+    "g-dev-002": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-006": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-008": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-011": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty",
+        "items[1].name"
+      ]
+    },
+    "g-dev-012": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-013": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty",
+        "items[1].name"
+      ]
+    },
+    "g-dev-015": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty",
+        "items[1].name"
+      ]
+    },
+    "g-dev-016": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty",
+        "items[1].name"
+      ]
+    },
+    "g-dev-018": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-019": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-021": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name",
+        "items[2].name"
+      ]
+    },
+    "g-dev-022": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-023": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-025": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-028": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[0].qty"
+      ]
+    },
+    "g-dev-029": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-030": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-031": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[0].qty"
+      ]
+    },
+    "g-dev-032": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty",
+        "items[0].qty"
+      ]
+    },
+    "g-dev-033": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-040": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty"
+      ]
+    },
+    "g-dev-044": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-045": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty",
+        "items[1].name"
+      ]
+    },
+    "g-dev-046": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-047": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-048": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "counterparty",
+        "items[0].qty"
+      ]
+    },
+    "g-dev-049": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-051": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name",
+        "credit"
+      ]
+    },
+    "g-dev-052": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-053": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[1].name"
+      ]
+    },
+    "g-dev-054": {
+      "error_code": "MISSING_REQUIRED_FIELD",
+      "problem_fields": [
+        "items[0].qty"
+      ]
+    }
+  },
+  "candidates": {
+    "g-dev-001": {
+      "candidate": {
+        "counterparty": "김씨네",
+        "items": [
+          {
+            "name": "배추",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 30000
+          }
+        ],
+        "total_amount": 30000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": "김씨네",
+          "items": [
+            {
+              "name": "배추",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 30000
+            }
+          ],
+          "total_amount": 30000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-002": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "영수네",
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": 20000
+          }
+        ],
+        "total_amount": 20000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "영수네",
+              "qty": "1",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": 20000
+            }
+          ],
+          "total_amount": 20000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-003": {
+      "candidate": {
+        "counterparty": "대박마트",
+        "items": [
+          {
+            "name": "계란",
+            "qty": 2,
+            "unit": "판",
+            "unit_price": null,
+            "amount": 45000
+          }
+        ],
+        "total_amount": 45000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-004": {
+      "candidate": {
+        "counterparty": "철수씨",
+        "items": [
+          {
+            "name": "양파",
+            "qty": 10,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 15000
+          }
+        ],
+        "total_amount": 15000,
+        "credit": null
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "credit"
+        ],
+        "partial_candidate": {
+          "counterparty": "철수씨",
+          "items": [
+            {
+              "name": "양파",
+              "qty": "10",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": 15000
+            }
+          ],
+          "total_amount": 15000,
+          "credit": null
+        }
+      }
+    },
+    "g-dev-005": {
+      "candidate": {
+        "counterparty": "한식당",
+        "items": [
+          {
+            "name": "돼지고기",
+            "qty": 5,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 60000
+          }
+        ],
+        "total_amount": 60000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-006": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "동네슈퍼",
+            "qty": 10,
+            "unit": "개",
+            "unit_price": null,
+            "amount": 20000
+          }
+        ],
+        "total_amount": 20000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "동네슈퍼",
+              "qty": "10",
+              "unit": "개",
+              "unit_price": null,
+              "amount": 20000
+            }
+          ],
+          "total_amount": 20000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-007": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "박씨네",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 35000
+          }
+        ],
+        "total_amount": 35000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "박씨네",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 35000
+            }
+          ],
+          "total_amount": 35000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-008": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "꽃게집",
+            "qty": 1,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 40000
+          }
+        ],
+        "total_amount": 40000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "꽃게집",
+              "qty": "1",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": 40000
+            }
+          ],
+          "total_amount": 40000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-009": {
+      "candidate": {
+        "counterparty": "이수마트",
+        "items": [
+          {
+            "name": "휴지",
+            "qty": 20,
+            "unit": "롤",
+            "unit_price": null,
+            "amount": 12000
+          }
+        ],
+        "total_amount": 12000,
+        "credit": null
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "credit"
+        ],
+        "partial_candidate": {
+          "counterparty": "이수마트",
+          "items": [
+            {
+              "name": "휴지",
+              "qty": "20",
+              "unit": "롤",
+              "unit_price": null,
+              "amount": 12000
+            }
+          ],
+          "total_amount": 12000,
+          "credit": null
+        }
+      }
+    },
+    "g-dev-010": {
+      "candidate": {
+        "counterparty": "정육점",
+        "items": [
+          {
+            "name": "소고기",
+            "qty": 2,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 120000
+          }
+        ],
+        "total_amount": 120000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-011": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "김씨네",
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": 15000
+          },
+          {
+            "name": null,
+            "qty": 2,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 15000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "김씨네",
+              "qty": "1",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": 15000
+            },
+            {
+              "name": null,
+              "qty": "2",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 15000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-012": {
+      "candidate": {
+        "counterparty": "영수네",
+        "items": [
+          {
+            "name": "사과",
+            "qty": 3,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 40000
+          },
+          {
+            "name": null,
+            "qty": 2,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 40000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "영수네",
+          "items": [
+            {
+              "name": "사과",
+              "qty": "3",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": 40000
+            },
+            {
+              "name": null,
+              "qty": "2",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 40000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-013": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "대박마트",
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 5,
+            "unit": "개",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 5000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "대박마트",
+              "qty": "1",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "5",
+              "unit": "개",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 5000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-014": {
+      "candidate": {
+        "counterparty": "한식당",
+        "items": [
+          {
+            "name": "돼지고기",
+            "qty": 3,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 12000
+          }
+        ],
+        "total_amount": 12000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-015": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "박씨",
+            "qty": 5,
+            "unit": "개",
+            "unit_price": null,
+            "amount": 25000
+          },
+          {
+            "name": null,
+            "qty": 10,
+            "unit": "개",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 25000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "박씨",
+              "qty": "5",
+              "unit": "개",
+              "unit_price": null,
+              "amount": 25000
+            },
+            {
+              "name": null,
+              "qty": "10",
+              "unit": "개",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 25000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-016": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "철수네",
+            "qty": 1,
+            "unit": "망",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 1,
+            "unit": "포기",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 3000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "철수네",
+              "qty": "1",
+              "unit": "망",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "1",
+              "unit": "포기",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 3000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-017": {
+      "candidate": {
+        "counterparty": "꽃게집",
+        "items": [
+          {
+            "name": "꽃게",
+            "qty": 5,
+            "unit": "마리",
+            "unit_price": null,
+            "amount": 15000
+          }
+        ],
+        "total_amount": 15000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-018": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "이수마트",
+            "qty": 2,
+            "unit": "팩",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 7000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "이수마트",
+              "qty": "2",
+              "unit": "팩",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 7000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-019": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "정육점",
+            "qty": 4,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 18000
+          }
+        ],
+        "total_amount": 18000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "정육점",
+              "qty": "4",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": 18000
+            }
+          ],
+          "total_amount": 18000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-020": {
+      "candidate": {
+        "counterparty": "동네슈퍼",
+        "items": [
+          {
+            "name": "라면",
+            "qty": 5,
+            "unit": "개",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 15000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-021": {
+      "candidate": {
+        "counterparty": "김씨네",
+        "items": [
+          {
+            "name": "상추",
+            "qty": 3,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": 55000
+          },
+          {
+            "name": null,
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 55000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name",
+          "items[2].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "김씨네",
+          "items": [
+            {
+              "name": "상추",
+              "qty": "3",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": 55000
+            },
+            {
+              "name": null,
+              "qty": "1",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "1",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 55000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-022": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "어",
+            "qty": 2,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": 28000
+          }
+        ],
+        "total_amount": 28000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "어",
+              "qty": "2",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": 28000
+            }
+          ],
+          "total_amount": 28000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-023": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "대박마트요",
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": 11000
+          }
+        ],
+        "total_amount": 11000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "대박마트요",
+              "qty": "1",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": 11000
+            }
+          ],
+          "total_amount": 11000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-024": {
+      "candidate": {
+        "counterparty": "한식집",
+        "items": [
+          {
+            "name": "돼지앞다리",
+            "qty": 2.5,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 9500
+          }
+        ],
+        "total_amount": 9500,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-025": {
+      "candidate": {
+        "counterparty": "박씨네",
+        "items": [
+          {
+            "name": "두부",
+            "qty": 10,
+            "unit": "모",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 2,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 3000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "박씨네",
+          "items": [
+            {
+              "name": "두부",
+              "qty": "10",
+              "unit": "모",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "2",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 3000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-026": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "철수씨",
+            "qty": 1,
+            "unit": "접",
+            "unit_price": null,
+            "amount": 20000
+          }
+        ],
+        "total_amount": 20000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "철수씨",
+              "qty": "1",
+              "unit": "접",
+              "unit_price": null,
+              "amount": 20000
+            }
+          ],
+          "total_amount": 20000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-027": {
+      "candidate": {
+        "counterparty": "카페민트",
+        "items": [
+          {
+            "name": "원두",
+            "qty": 1,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 45000
+          }
+        ],
+        "total_amount": 45000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-028": {
+      "candidate": {
+        "counterparty": "분식왕",
+        "items": [
+          {
+            "name": "떡볶이재료",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 22000
+          }
+        ],
+        "total_amount": 22000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": "분식왕",
+          "items": [
+            {
+              "name": "떡볶이재료",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 22000
+            }
+          ],
+          "total_amount": 22000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-029": {
+      "candidate": {
+        "counterparty": "횟집바다",
+        "items": [
+          {
+            "name": "광어",
+            "qty": 1,
+            "unit": "마리",
+            "unit_price": null,
+            "amount": 120000
+          },
+          {
+            "name": null,
+            "qty": 1,
+            "unit": "마리",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 120000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "횟집바다",
+          "items": [
+            {
+              "name": "광어",
+              "qty": "1",
+              "unit": "마리",
+              "unit_price": null,
+              "amount": 120000
+            },
+            {
+              "name": null,
+              "qty": "1",
+              "unit": "마리",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 120000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-030": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "농협마트",
+            "qty": 20,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 1500
+          }
+        ],
+        "total_amount": 1500,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "농협마트",
+              "qty": "20",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": 1500
+            }
+          ],
+          "total_amount": 1500,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-031": {
+      "candidate": {
+        "counterparty": "미화반찬",
+        "items": [
+          {
+            "name": "김치",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 18000
+          }
+        ],
+        "total_amount": 18000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": "미화반찬",
+          "items": [
+            {
+              "name": "김치",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 18000
+            }
+          ],
+          "total_amount": 18000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-032": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "문구도매",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 500,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "문구도매",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 500,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-033": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "아",
+            "qty": 3,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": 8000
+          }
+        ],
+        "total_amount": 8000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "아",
+              "qty": "3",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": 8000
+            }
+          ],
+          "total_amount": 8000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-034": {
+      "candidate": {
+        "counterparty": "세탁소",
+        "items": [
+          {
+            "name": "세제",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 9500
+          }
+        ],
+        "total_amount": 9500,
+        "credit": null
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty",
+          "credit"
+        ],
+        "partial_candidate": {
+          "counterparty": "세탁소",
+          "items": [
+            {
+              "name": "세제",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 9500
+            }
+          ],
+          "total_amount": 9500,
+          "credit": null
+        }
+      }
+    },
+    "g-dev-035": {
+      "candidate": {
+        "counterparty": "영수네",
+        "items": [
+          {
+            "name": "김씨네랑",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 20000
+          }
+        ],
+        "total_amount": 20000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": "영수네",
+          "items": [
+            {
+              "name": "김씨네랑",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 20000
+            }
+          ],
+          "total_amount": 20000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-036": {
+      "candidate": {
+        "counterparty": "대박마트",
+        "items": [
+          {
+            "name": "콜라",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 30000
+          }
+        ],
+        "total_amount": 30000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": "대박마트",
+          "items": [
+            {
+              "name": "콜라",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 30000
+            }
+          ],
+          "total_amount": 30000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-037": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "한식당",
+            "qty": 3,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 50000
+          }
+        ],
+        "total_amount": 50000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "한식당",
+              "qty": "3",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": 50000
+            }
+          ],
+          "total_amount": 50000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-038": {
+      "candidate": {
+        "counterparty": "사람",
+        "items": [
+          {
+            "name": "그",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": null,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty",
+          "total_amount"
+        ],
+        "partial_candidate": {
+          "counterparty": "사람",
+          "items": [
+            {
+              "name": "그",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": null,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-039": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "박씨네",
+            "qty": 2,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 20000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "박씨네",
+              "qty": "2",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 20000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-040": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "수산시장",
+            "qty": 10,
+            "unit": "마리",
+            "unit_price": null,
+            "amount": 3500
+          }
+        ],
+        "total_amount": 3500,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "수산시장",
+              "qty": "10",
+              "unit": "마리",
+              "unit_price": null,
+              "amount": 3500
+            }
+          ],
+          "total_amount": 3500,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-041": {
+      "candidate": {
+        "counterparty": "대박마트",
+        "items": [
+          {
+            "name": "계란",
+            "qty": 2,
+            "unit": "판",
+            "unit_price": null,
+            "amount": 45000
+          }
+        ],
+        "total_amount": 45000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-042": {
+      "candidate": {
+        "counterparty": "한식당",
+        "items": [
+          {
+            "name": "돼지고기",
+            "qty": 5,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 60000
+          }
+        ],
+        "total_amount": 60000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-043": {
+      "candidate": {
+        "counterparty": "정육점",
+        "items": [
+          {
+            "name": "소고기",
+            "qty": 2,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 120000
+          }
+        ],
+        "total_amount": 120000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-044": {
+      "candidate": {
+        "counterparty": "영수네",
+        "items": [
+          {
+            "name": "사과",
+            "qty": 3,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": 40000
+          },
+          {
+            "name": null,
+            "qty": 2,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 40000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "영수네",
+          "items": [
+            {
+              "name": "사과",
+              "qty": "3",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": 40000
+            },
+            {
+              "name": null,
+              "qty": "2",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 40000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-045": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "박씨",
+            "qty": 5,
+            "unit": "개",
+            "unit_price": null,
+            "amount": 25000
+          },
+          {
+            "name": null,
+            "qty": 10,
+            "unit": "개",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 25000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "박씨",
+              "qty": "5",
+              "unit": "개",
+              "unit_price": null,
+              "amount": 25000
+            },
+            {
+              "name": null,
+              "qty": "10",
+              "unit": "개",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 25000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-046": {
+      "candidate": {
+        "counterparty": "박씨네",
+        "items": [
+          {
+            "name": "두부",
+            "qty": 10,
+            "unit": "모",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 2,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 3000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "박씨네",
+          "items": [
+            {
+              "name": "두부",
+              "qty": "10",
+              "unit": "모",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "2",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 3000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-047": {
+      "candidate": {
+        "counterparty": "횟집바다",
+        "items": [
+          {
+            "name": "광어",
+            "qty": 1,
+            "unit": "마리",
+            "unit_price": null,
+            "amount": 120000
+          },
+          {
+            "name": null,
+            "qty": 1,
+            "unit": "마리",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 120000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "횟집바다",
+          "items": [
+            {
+              "name": "광어",
+              "qty": "1",
+              "unit": "마리",
+              "unit_price": null,
+              "amount": 120000
+            },
+            {
+              "name": null,
+              "qty": "1",
+              "unit": "마리",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 120000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-048": {
+      "candidate": {
+        "counterparty": null,
+        "items": [
+          {
+            "name": "문구도매",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 500,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "counterparty",
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": null,
+          "items": [
+            {
+              "name": "문구도매",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 500,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-049": {
+      "candidate": {
+        "counterparty": "약수슈퍼",
+        "items": [
+          {
+            "name": "생수",
+            "qty": 24,
+            "unit": "개",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 3,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 21600,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "약수슈퍼",
+          "items": [
+            {
+              "name": "생수",
+              "qty": "24",
+              "unit": "개",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "3",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 21600,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-050": {
+      "candidate": {
+        "counterparty": "우리정육",
+        "items": [
+          {
+            "name": "돼지고기",
+            "qty": 12,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 102000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-051": {
+      "candidate": {
+        "counterparty": "두부공방",
+        "items": [
+          {
+            "name": "두부",
+            "qty": 2,
+            "unit": "모",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 12,
+            "unit": "모",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 24000,
+        "credit": null
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name",
+          "credit"
+        ],
+        "partial_candidate": {
+          "counterparty": "두부공방",
+          "items": [
+            {
+              "name": "두부",
+              "qty": "2",
+              "unit": "모",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "12",
+              "unit": "모",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 24000,
+          "credit": null
+        }
+      }
+    },
+    "g-dev-052": {
+      "candidate": {
+        "counterparty": "엄마손반찬",
+        "items": [
+          {
+            "name": "계란",
+            "qty": 2,
+            "unit": "판",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 3,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 192000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "엄마손반찬",
+          "items": [
+            {
+              "name": "계란",
+              "qty": "2",
+              "unit": "판",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "3",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 192000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-053": {
+      "candidate": {
+        "counterparty": "싱싱청과",
+        "items": [
+          {
+            "name": "사과",
+            "qty": 2,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 3,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 109000,
+        "credit": false
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "싱싱청과",
+          "items": [
+            {
+              "name": "사과",
+              "qty": "2",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "3",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 109000,
+          "credit": false
+        }
+      }
+    },
+    "g-dev-054": {
+      "candidate": {
+        "counterparty": "세탁소",
+        "items": [
+          {
+            "name": "세제",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 36000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": "세탁소",
+          "items": [
+            {
+              "name": "세제",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 36000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-055": {
+      "candidate": {
+        "counterparty": "행복마트",
+        "items": [
+          {
+            "name": "콜라",
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 36000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "EXCEED_MAX_ITEMS",
+        "problem_fields": [
+          "items"
+        ],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-056": {
+      "candidate": {
+        "counterparty": "김밥천하",
+        "items": [
+          {
+            "name": "김",
+            "qty": 2,
+            "unit": "봉지",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 3,
+            "unit": "팩",
+            "unit_price": null,
+            "amount": null
+          },
+          {
+            "name": null,
+            "qty": 1,
+            "unit": "팩",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 32000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[1].name",
+          "items[2].name"
+        ],
+        "partial_candidate": {
+          "counterparty": "김밥천하",
+          "items": [
+            {
+              "name": "김",
+              "qty": "2",
+              "unit": "봉지",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "3",
+              "unit": "팩",
+              "unit_price": null,
+              "amount": null
+            },
+            {
+              "name": null,
+              "qty": "1",
+              "unit": "팩",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 32000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-057": {
+      "candidate": {
+        "counterparty": "떡집사랑",
+        "items": [
+          {
+            "name": "인절미",
+            "qty": 20,
+            "unit": "개",
+            "unit_price": null,
+            "amount": 4500
+          }
+        ],
+        "total_amount": 4500,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 200,
+        "error_code": null,
+        "problem_fields": [],
+        "partial_candidate": null
+      }
+    },
+    "g-dev-058": {
+      "candidate": {
+        "counterparty": "참기름집",
+        "items": [
+          {
+            "name": "참기름",
+            "qty": null,
+            "unit": null,
+            "unit_price": null,
+            "amount": 8000
+          }
+        ],
+        "total_amount": 8000,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "MISSING_REQUIRED_FIELD",
+        "problem_fields": [
+          "items[0].qty"
+        ],
+        "partial_candidate": {
+          "counterparty": "참기름집",
+          "items": [
+            {
+              "name": "참기름",
+              "qty": null,
+              "unit": null,
+              "unit_price": null,
+              "amount": 8000
+            }
+          ],
+          "total_amount": 8000,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-059": {
+      "candidate": {
+        "counterparty": "고기창고",
+        "items": [
+          {
+            "name": "돼지고기",
+            "qty": 2,
+            "unit": "킬로",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 0,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "AMOUNT_OUT_OF_RANGE",
+        "problem_fields": [
+          "total_amount"
+        ],
+        "partial_candidate": {
+          "counterparty": "고기창고",
+          "items": [
+            {
+              "name": "돼지고기",
+              "qty": "2",
+              "unit": "킬로",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 0,
+          "credit": true
+        }
+      }
+    },
+    "g-dev-060": {
+      "candidate": {
+        "counterparty": "한우마을",
+        "items": [
+          {
+            "name": "한우",
+            "qty": 1,
+            "unit": "박스",
+            "unit_price": null,
+            "amount": null
+          }
+        ],
+        "total_amount": 100000001,
+        "credit": true
+      },
+      "validation_response": {
+        "status_code": 400,
+        "error_code": "AMOUNT_OUT_OF_RANGE",
+        "problem_fields": [
+          "total_amount"
+        ],
+        "partial_candidate": {
+          "counterparty": "한우마을",
+          "items": [
+            {
+              "name": "한우",
+              "qty": "1",
+              "unit": "박스",
+              "unit_price": null,
+              "amount": null
+            }
+          ],
+          "total_amount": 100000001,
+          "credit": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "group_id": "gpt-4o-mini-20261002-162114-kst-p0-on",
+  "runs": [
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-on-r1",
+      "transaction_correct": 31,
+      "amount_correct": 55,
+      "required_f1_pct": 93.5551,
+      "over_deadline_rate": 0.0
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-on-r2",
+      "transaction_correct": 31,
+      "amount_correct": 54,
+      "required_f1_pct": 93.5282,
+      "over_deadline_rate": 0.0
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-on-r3",
+      "transaction_correct": 32,
+      "amount_correct": 54,
+      "required_f1_pct": 93.75,
+      "over_deadline_rate": 0.0
+    }
+  ],
+  "median_run_id": "gpt-4o-mini-20261002-162114-kst-p0-on-r1",
+  "spread": {
+    "transaction_correct": 1,
+    "amount_correct": 1,
+    "required_f1_pct": 0.2218
+  },
+  "unstable_record_ids": [
+    "seed-006",
+    "seed-027",
+    "seed-044",
+    "seed-045"
+  ],
+  "response_models": [
+    "gpt-4o-mini-2024-07-18"
+  ]
+}

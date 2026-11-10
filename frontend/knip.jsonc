@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  // Tests are bundled by scripts/test.mjs; the browser fixture is a Vite-only HTML entry.
+  "entry": ["src/main.tsx", "scripts/*.mjs", "tests/*.test.{ts,tsx}", "tests/browser-fixture.tsx"],
+  "project": ["src/**/*.{ts,tsx,css}", "scripts/*.mjs", "tests/**/*.{ts,tsx}"],
+  // OpenAPI exports the complete server schema, including types the FE does not consume.
+  "ignoreIssues": {
+    "src/types/generated.ts": ["exports", "types"]
+  }
+}

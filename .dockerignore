@@ -1,0 +1,15 @@
+# Dockerfile copies only backend/ and configs/ — keep secrets and dev artifacts out of them
+**/.env
+**/.env.*
+**/*.db
+**/__pycache__/
+**/.pytest_cache/
+backend/.venv/
+backend/tests/
+
+# not needed in the build context
+.git/
+frontend/
+data/
+eval/
+docs/

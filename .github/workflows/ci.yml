@@ -1,0 +1,90 @@
+# EchoBill CI — PR마다 자동 검증 (결정 로그 DL-23, 하네스 2단계)
+# 로컬에서 같은 검증: CLAUDE.md §1
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  backend:
+    name: backend (pytest + 계약 테스트)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    # 운영과 같은 PostgreSQL에서 마이그레이션을 검증 (tests/test_migrations.py)
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: echobill_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      TEST_POSTGRES_URL: postgresql://postgres:postgres@localhost:5432/echobill_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+      - run: pip install -r requirements.txt
+      # .env 없이 config.py 기본값으로 실행된다. 비밀값은 CI에 두지 않는다.
+      - run: pytest -q
+      # 운영과 같은 PostgreSQL로 전체 테스트 한 번 더 (Row Lock·JSONB·마이그레이션 — PM #19)
+      - run: pytest -q
+        env:
+          TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/echobill_test
+      # 채점기 테스트는 저장소 루트에서 실행한다 (eval/는 backend/app을 경로에 추가해 import)
+      - run: python -m pytest -q eval/tests
+        working-directory: .
+      # 파서 회귀 검사 — Dev만, API 없음 (PM 10/6). 기준선: eval/regression_baseline.json
+      - run: python eval/regression.py
+        working-directory: .
+
+  frontend:
+    name: frontend (lint + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run lint
+      - run: npm run build
+
+  golden:
+    name: golden (검산 + 생성물 최신 여부)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: data/golden
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python build.py
+      # data.py만 고치고 build.py를 돌리지 않았으면 여기서 실패한다
+      - name: 생성물(jsonl·검수용 md)이 data.py와 일치하는지
+        run: git diff --exit-code -- golden_dev.jsonl golden_dev_review.md
+      # Seed도 같은 정답 규칙(rules.py) + Golden·프롬프트 누출 검사
+      - run: python build.py
+        working-directory: data/seed
+      - name: Seed 생성물이 data.py와 일치하는지
+        working-directory: data/seed
+        run: git diff --exit-code -- seed_v1.jsonl seed_v1_review.md

@@ -1,0 +1,614 @@
+{
+  "run": {
+    "scoring_version": "v1.3",
+    "golden_file": "data/seed/seed_v1.jsonl",
+    "dataset_sha256": "2d80b70e34c8bbe140b1add446fccc32e6efac64e4f38a08f7640a16842fbd03",
+    "predictions_file": "eval/results/gpt-4o-mini-20261002-162114-kst-p0-off-r2.predictions.jsonl",
+    "scored_ids": 60,
+    "excluded_golden_ids": [],
+    "postprocess_version": null,
+    "validation_attached": true
+  },
+  "metrics": {
+    "dataset": {
+      "total": 60,
+      "by_outcome": {
+        "정상 구조화 가능": 41,
+        "추가 확인 필요": 19
+      },
+      "by_difficulty": {
+        "명확한 표현": 36,
+        "복잡·생략 표현": 24
+      }
+    },
+    "generation": {
+      "succeeded": 60,
+      "failed": 0,
+      "total": 60
+    },
+    "transaction_exact": {
+      "correct": 26,
+      "total": 41,
+      "rate": 0.634146
+    },
+    "amount_exact": {
+      "overall": {
+        "correct": 49,
+        "total": 57,
+        "rate": 0.859649
+      },
+      "stated": {
+        "correct": 43,
+        "total": 51,
+        "rate": 0.843137
+      },
+      "derived": {
+        "correct": 6,
+        "total": 6,
+        "rate": 1.0
+      }
+    },
+    "required_fields_micro": {
+      "tp": 216,
+      "fp": 18,
+      "fn": 19,
+      "precision": 0.923077,
+      "recall": 0.919149,
+      "f1": 0.921109
+    },
+    "optional_field_errors": {
+      "total_fp": 83,
+      "by_field": {
+        "unit": 9,
+        "unit_price": 55,
+        "amount": 19
+      }
+    },
+    "space_normalization": {
+      "field_matches": 0,
+      "transaction_matches": 0
+    },
+    "confirmation_appropriateness": {
+      "status": "complete",
+      "correct": 8,
+      "total": 19,
+      "rate": 0.421053,
+      "evaluated": 19,
+      "unavailable": 0
+    },
+    "credit_wrongly_confirmed": {
+      "count": 2,
+      "ids": [
+        "seed-040",
+        "seed-049"
+      ]
+    },
+    "normal_rejected_400": {
+      "count": 4,
+      "evaluated": 41,
+      "ids": [
+        "seed-004",
+        "seed-022",
+        "seed-029",
+        "seed-037"
+      ]
+    },
+    "records": [
+      {
+        "id": "seed-001",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-002",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": false,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-003",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-004",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-005",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-006",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": false,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-007",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-008",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-009",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-010",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-011",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-012",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-013",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-014",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-015",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-016",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-017",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-018",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-019",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-020",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-021",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-022",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 5
+      },
+      {
+        "id": "seed-023",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 3
+      },
+      {
+        "id": "seed-024",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 3
+      },
+      {
+        "id": "seed-025",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": false,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-026",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-027",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-028",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-029",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 3
+      },
+      {
+        "id": "seed-030",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 3
+      },
+      {
+        "id": "seed-031",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 3
+      },
+      {
+        "id": "seed-032",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 3
+      },
+      {
+        "id": "seed-033",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-034",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-035",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-036",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": false,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-037",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-038",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-039",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-040",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-041",
+        "generation_success": true,
+        "transaction_exact": true,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-042",
+        "generation_success": true,
+        "transaction_exact": false,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-043",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": false,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-044",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": false,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-045",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-046",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-047",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-048",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": false,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-049",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-050",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-051",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": null,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-052",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-053",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 1
+      },
+      {
+        "id": "seed-054",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-055",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 8
+      },
+      {
+        "id": "seed-056",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 4
+      },
+      {
+        "id": "seed-057",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": null,
+        "optional_field_fp": 2
+      },
+      {
+        "id": "seed-058",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": null,
+        "optional_field_fp": 4
+      },
+      {
+        "id": "seed-059",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": false,
+        "optional_field_fp": 0
+      },
+      {
+        "id": "seed-060",
+        "generation_success": true,
+        "transaction_exact": null,
+        "amount_exact": true,
+        "optional_field_fp": 0
+      }
+    ],
+    "format_errors": [],
+    "optional_field_missing": {
+      "total": 31,
+      "by_field": {
+        "unit": 19,
+        "unit_price": 2,
+        "amount": 10
+      }
+    },
+    "field_accuracy": {
+      "counterparty": {
+        "correct": 55,
+        "total": 57,
+        "rate": 0.964912
+      },
+      "total_amount": {
+        "correct": 49,
+        "total": 57,
+        "rate": 0.859649
+      },
+      "credit": {
+        "correct": 53,
+        "total": 56,
+        "rate": 0.946429
+      },
+      "name": {
+        "correct": 69,
+        "total": 73,
+        "rate": 0.945205
+      },
+      "qty": {
+        "correct": 61,
+        "total": 68,
+        "rate": 0.897059
+      },
+      "unit": {
+        "correct": 49,
+        "total": 68,
+        "rate": 0.720588
+      },
+      "amount": {
+        "correct": 46,
+        "total": 62,
+        "rate": 0.741935
+      },
+      "unit_price": {
+        "correct": 9,
+        "total": 11,
+        "rate": 0.818182
+      }
+    }
+  },
+  "postprocess": {
+    "before": {
+      "transaction_exact": {
+        "correct": 26,
+        "total": 41,
+        "rate": 0.634146
+      },
+      "amount_exact": {
+        "overall": {
+          "correct": 49,
+          "total": 57,
+          "rate": 0.859649
+        },
+        "stated": {
+          "correct": 43,
+          "total": 51,
+          "rate": 0.843137
+        },
+        "derived": {
+          "correct": 6,
+          "total": 6,
+          "rate": 1.0
+        }
+      },
+      "required_fields_micro": {
+        "tp": 216,
+        "fp": 18,
+        "fn": 19,
+        "precision": 0.923077,
+        "recall": 0.919149,
+        "f1": 0.921109
+      }
+    },
+    "fixed_ids": {
+      "transaction_exact": [],
+      "amount_exact": []
+    },
+    "broken_ids": {
+      "transaction_exact": [],
+      "amount_exact": []
+    },
+    "applied_counts": {},
+    "note": "정규화 off 실행 — 후처리 미적용"
+  }
+}

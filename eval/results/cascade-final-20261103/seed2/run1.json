@@ -1,0 +1,2841 @@
+{
+  "sentences": 140,
+  "mini_errors": 0,
+  "wrong_saved_off": [
+    "seed2-007",
+    "seed2-049",
+    "seed2-083",
+    "seed2-094",
+    "seed2-095",
+    "seed2-098"
+  ],
+  "wrong_saved_on": [
+    "seed2-094",
+    "seed2-095",
+    "seed2-098"
+  ],
+  "new_questions": [
+    "seed2-007",
+    "seed2-049",
+    "seed2-083"
+  ],
+  "needless_questions": [],
+  "second_calls": 18,
+  "second_failures": [],
+  "second_ms_p50": 1302,
+  "second_ms_p95": 2066,
+  "rows": [
+    {
+      "id": "seed2-001",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 2968,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-002",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1219,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-003",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1029,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-004",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1366,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-005",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1015,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-006",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1015,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-007",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1514,
+      "asked": [
+        "cascade_item_name",
+        "cascade_total_amount"
+      ],
+      "mini_ms": 1135,
+      "off_status": 200,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-008",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1145,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-009",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1099,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-010",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1297,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-011",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1032,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-012",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1030,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-013",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1029,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-014",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 971,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-015",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1145,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-016",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1218,
+      "asked": [],
+      "mini_ms": 962,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-017",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1117,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-018",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 888,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-019",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1091,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-020",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1202,
+      "asked": [
+        "cascade_counterparty"
+      ],
+      "mini_ms": 943,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-021",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1518,
+      "asked": [],
+      "mini_ms": 1179,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-022",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1053,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-023",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1142,
+      "asked": [],
+      "mini_ms": 1355,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-024",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1746,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-025",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1025,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-026",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1012,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-027",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 971,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-028",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1092,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-029",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1186,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-030",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1669,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-031",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1117,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-032",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 864,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-033",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1021,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-034",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 910,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-035",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1133,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-036",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1176,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-037",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1413,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-038",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1412,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-039",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1225,
+      "asked": [],
+      "mini_ms": 1400,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-040",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1417,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-041",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1771,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-042",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1266,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-043",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 2066,
+      "asked": [],
+      "mini_ms": 1207,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-044",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1156,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-045",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1394,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-046",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1199,
+      "asked": [],
+      "mini_ms": 1322,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-047",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1235,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-048",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1128,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-049",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1247,
+      "asked": [
+        "cascade_item_qty"
+      ],
+      "mini_ms": 1353,
+      "off_status": 200,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-050",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1410,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-051",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1401,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-052",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1486,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-053",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1506,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-054",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1458,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-055",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1651,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-056",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1638,
+      "asked": [],
+      "mini_ms": 1399,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-057",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1308,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-058",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1311,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-059",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1500,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-060",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1421,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-061",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1393,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-062",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1307,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-063",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1247,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-064",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1265,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-065",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1167,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-066",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1239,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-067",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1220,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-068",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1420,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-069",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1064,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-070",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1054,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-071",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1047,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-072",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1153,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-073",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 911,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-074",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1417,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-075",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1367,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-076",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1175,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-077",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1031,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-078",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1143,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-079",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1626,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-080",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1115,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-081",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1312,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-082",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1308,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-083",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1317,
+      "asked": [
+        "cascade_item_qty"
+      ],
+      "mini_ms": 1196,
+      "off_status": 200,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-084",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 2004,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-085",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1416,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-086",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1749,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-087",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1842,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-088",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1289,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-089",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1457,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-090",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 869,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-091",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1333,
+      "asked": [
+        "cascade_item_qty"
+      ],
+      "mini_ms": 1008,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-092",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 911,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-093",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1729,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-094",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1320,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-095",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1170,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-096",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1527,
+      "asked": [
+        "cascade_item_qty",
+        "cascade_total_amount"
+      ],
+      "mini_ms": 909,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-097",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1060,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-098",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1227,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": true
+    },
+    {
+      "id": "seed2-099",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1840,
+      "asked": [
+        "cascade_total_amount"
+      ],
+      "mini_ms": 1091,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-100",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1037,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-101",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1275,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-102",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1293,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-103",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1023,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-104",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1370,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-105",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1302,
+      "asked": [],
+      "mini_ms": 1145,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-106",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1109,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-107",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 975,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-108",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1072,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-109",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 911,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-110",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1099,
+      "off_status": 200,
+      "on_status": 200,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-111",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1242,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-112",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1205,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-113",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1323,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-114",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1150,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-115",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1283,
+      "asked": [],
+      "mini_ms": 1401,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-116",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1614,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-117",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1677,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-118",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1486,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-119",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1695,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-120",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 984,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-121",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1002,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-122",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1101,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-123",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1506,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-124",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 996,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-125",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1505,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-126",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1177,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-127",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1093,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-128",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 931,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-129",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1298,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-130",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 991,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-131",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1106,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-132",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1423,
+      "asked": [],
+      "mini_ms": 1012,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-133",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 996,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-134",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1100,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-135",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1094,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-136",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 993,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-137",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 762,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-138",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 680,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-139",
+      "error": null,
+      "second_called": true,
+      "second_error": null,
+      "second_ms": 1240,
+      "asked": [
+        "cascade_counterparty",
+        "cascade_item_name"
+      ],
+      "mini_ms": 1558,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    },
+    {
+      "id": "seed2-140",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 789,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    }
+  ],
+  "wall_seconds": 202.1,
+  "credit_wrong_off": [],
+  "credit_wrong_on": [],
+  "over_5s": [],
+  "tokens": {
+    "mini_in": 103884,
+    "mini_out": 9176,
+    "second_in": 7473,
+    "second_out": 2172,
+    "mini_calls_no_usage": 0,
+    "second_calls_no_usage": 0
+  },
+  "cost_usd": {
+    "mini": 0.021088,
+    "second": 0.005126,
+    "total": 0.026214
+  },
+  "mini_error_types": {},
+  "per_sentence": {
+    "seed2-001": {
+      "mini_in": 735,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 3089
+    },
+    "seed2-002": {
+      "mini_in": 735,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1240
+    },
+    "seed2-003": {
+      "mini_in": 748,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1058
+    },
+    "seed2-004": {
+      "mini_in": 732,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1393
+    },
+    "seed2-005": {
+      "mini_in": 729,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1044
+    },
+    "seed2-006": {
+      "mini_in": 744,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1042
+    },
+    "seed2-007": {
+      "mini_in": 732,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 406,
+          "out": 95
+        }
+      ],
+      "mini_wall_ms": 1163
+    },
+    "seed2-008": {
+      "mini_in": 729,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1170
+    },
+    "seed2-009": {
+      "mini_in": 732,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1126
+    },
+    "seed2-010": {
+      "mini_in": 736,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1323
+    },
+    "seed2-011": {
+      "mini_in": 731,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1058
+    },
+    "seed2-012": {
+      "mini_in": 739,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1080
+    },
+    "seed2-013": {
+      "mini_in": 733,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1056
+    },
+    "seed2-014": {
+      "mini_in": 734,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1005
+    },
+    "seed2-015": {
+      "mini_in": 736,
+      "mini_out": 58,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1177
+    },
+    "seed2-016": {
+      "mini_in": 726,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 399,
+          "out": 99
+        }
+      ],
+      "mini_wall_ms": 1026
+    },
+    "seed2-017": {
+      "mini_in": 744,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1198
+    },
+    "seed2-018": {
+      "mini_in": 732,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 912
+    },
+    "seed2-019": {
+      "mini_in": 743,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1114
+    },
+    "seed2-020": {
+      "mini_in": 734,
+      "mini_out": 58,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 405,
+          "out": 106
+        }
+      ],
+      "mini_wall_ms": 969
+    },
+    "seed2-021": {
+      "mini_in": 732,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 405,
+          "out": 98
+        }
+      ],
+      "mini_wall_ms": 1202
+    },
+    "seed2-022": {
+      "mini_in": 732,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1094
+    },
+    "seed2-023": {
+      "mini_in": 735,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 407,
+          "out": 100
+        }
+      ],
+      "mini_wall_ms": 1379
+    },
+    "seed2-024": {
+      "mini_in": 733,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1780
+    },
+    "seed2-025": {
+      "mini_in": 732,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1056
+    },
+    "seed2-026": {
+      "mini_in": 743,
+      "mini_out": 61,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1039
+    },
+    "seed2-027": {
+      "mini_in": 736,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1013
+    },
+    "seed2-028": {
+      "mini_in": 741,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1124
+    },
+    "seed2-029": {
+      "mini_in": 738,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1216
+    },
+    "seed2-030": {
+      "mini_in": 740,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1696
+    },
+    "seed2-031": {
+      "mini_in": 736,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1140
+    },
+    "seed2-032": {
+      "mini_in": 736,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 895
+    },
+    "seed2-033": {
+      "mini_in": 737,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1041
+    },
+    "seed2-034": {
+      "mini_in": 734,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 935
+    },
+    "seed2-035": {
+      "mini_in": 734,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1154
+    },
+    "seed2-036": {
+      "mini_in": 736,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1228
+    },
+    "seed2-037": {
+      "mini_in": 738,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1428
+    },
+    "seed2-038": {
+      "mini_in": 749,
+      "mini_out": 78,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1440
+    },
+    "seed2-039": {
+      "mini_in": 757,
+      "mini_out": 82,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 433,
+          "out": 152
+        }
+      ],
+      "mini_wall_ms": 1432
+    },
+    "seed2-040": {
+      "mini_in": 752,
+      "mini_out": 81,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1436
+    },
+    "seed2-041": {
+      "mini_in": 758,
+      "mini_out": 81,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1802
+    },
+    "seed2-042": {
+      "mini_in": 750,
+      "mini_out": 82,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1361
+    },
+    "seed2-043": {
+      "mini_in": 741,
+      "mini_out": 77,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 417,
+          "out": 152
+        }
+      ],
+      "mini_wall_ms": 1237
+    },
+    "seed2-044": {
+      "mini_in": 743,
+      "mini_out": 82,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1198
+    },
+    "seed2-045": {
+      "mini_in": 750,
+      "mini_out": 80,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1419
+    },
+    "seed2-046": {
+      "mini_in": 752,
+      "mini_out": 82,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 431,
+          "out": 154
+        }
+      ],
+      "mini_wall_ms": 1344
+    },
+    "seed2-047": {
+      "mini_in": 748,
+      "mini_out": 79,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1254
+    },
+    "seed2-048": {
+      "mini_in": 756,
+      "mini_out": 80,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1149
+    },
+    "seed2-049": {
+      "mini_in": 756,
+      "mini_out": 82,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 438,
+          "out": 154
+        }
+      ],
+      "mini_wall_ms": 1388
+    },
+    "seed2-050": {
+      "mini_in": 764,
+      "mini_out": 105,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1433
+    },
+    "seed2-051": {
+      "mini_in": 772,
+      "mini_out": 110,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1439
+    },
+    "seed2-052": {
+      "mini_in": 765,
+      "mini_out": 108,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1527
+    },
+    "seed2-053": {
+      "mini_in": 763,
+      "mini_out": 103,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1529
+    },
+    "seed2-054": {
+      "mini_in": 766,
+      "mini_out": 106,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1475
+    },
+    "seed2-055": {
+      "mini_in": 767,
+      "mini_out": 107,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1691
+    },
+    "seed2-056": {
+      "mini_in": 763,
+      "mini_out": 105,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 446,
+          "out": 215
+        }
+      ],
+      "mini_wall_ms": 1430
+    },
+    "seed2-057": {
+      "mini_in": 741,
+      "mini_out": 76,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1327
+    },
+    "seed2-058": {
+      "mini_in": 749,
+      "mini_out": 77,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1327
+    },
+    "seed2-059": {
+      "mini_in": 738,
+      "mini_out": 74,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1528
+    },
+    "seed2-060": {
+      "mini_in": 745,
+      "mini_out": 75,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1442
+    },
+    "seed2-061": {
+      "mini_in": 746,
+      "mini_out": 79,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1432
+    },
+    "seed2-062": {
+      "mini_in": 743,
+      "mini_out": 77,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1328
+    },
+    "seed2-063": {
+      "mini_in": 744,
+      "mini_out": 77,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1274
+    },
+    "seed2-064": {
+      "mini_in": 740,
+      "mini_out": 73,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1283
+    },
+    "seed2-065": {
+      "mini_in": 744,
+      "mini_out": 78,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1185
+    },
+    "seed2-066": {
+      "mini_in": 742,
+      "mini_out": 72,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1271
+    },
+    "seed2-067": {
+      "mini_in": 739,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1254
+    },
+    "seed2-068": {
+      "mini_in": 736,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1450
+    },
+    "seed2-069": {
+      "mini_in": 746,
+      "mini_out": 60,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1080
+    },
+    "seed2-070": {
+      "mini_in": 747,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1072
+    },
+    "seed2-071": {
+      "mini_in": 737,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1067
+    },
+    "seed2-072": {
+      "mini_in": 739,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1179
+    },
+    "seed2-073": {
+      "mini_in": 745,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 971
+    },
+    "seed2-074": {
+      "mini_in": 737,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1440
+    },
+    "seed2-075": {
+      "mini_in": 743,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1429
+    },
+    "seed2-076": {
+      "mini_in": 736,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1205
+    },
+    "seed2-077": {
+      "mini_in": 738,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1045
+    },
+    "seed2-078": {
+      "mini_in": 752,
+      "mini_out": 78,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1169
+    },
+    "seed2-079": {
+      "mini_in": 762,
+      "mini_out": 82,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1653
+    },
+    "seed2-080": {
+      "mini_in": 757,
+      "mini_out": 77,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1149
+    },
+    "seed2-081": {
+      "mini_in": 760,
+      "mini_out": 81,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1341
+    },
+    "seed2-082": {
+      "mini_in": 753,
+      "mini_out": 78,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1334
+    },
+    "seed2-083": {
+      "mini_in": 755,
+      "mini_out": 80,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 427,
+          "out": 154
+        }
+      ],
+      "mini_wall_ms": 1227
+    },
+    "seed2-084": {
+      "mini_in": 772,
+      "mini_out": 105,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 2026
+    },
+    "seed2-085": {
+      "mini_in": 774,
+      "mini_out": 104,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1451
+    },
+    "seed2-086": {
+      "mini_in": 761,
+      "mini_out": 102,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1779
+    },
+    "seed2-087": {
+      "mini_in": 768,
+      "mini_out": 106,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1860
+    },
+    "seed2-088": {
+      "mini_in": 764,
+      "mini_out": 104,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1303
+    },
+    "seed2-089": {
+      "mini_in": 772,
+      "mini_out": 106,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1501
+    },
+    "seed2-090": {
+      "mini_in": 739,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 893
+    },
+    "seed2-091": {
+      "mini_in": 731,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 403,
+          "out": 102
+        }
+      ],
+      "mini_wall_ms": 1042
+    },
+    "seed2-092": {
+      "mini_in": 737,
+      "mini_out": 60,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 927
+    },
+    "seed2-093": {
+      "mini_in": 735,
+      "mini_out": 105,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1745
+    },
+    "seed2-094": {
+      "mini_in": 744,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1347
+    },
+    "seed2-095": {
+      "mini_in": 739,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1198
+    },
+    "seed2-096": {
+      "mini_in": 733,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 407,
+          "out": 100
+        }
+      ],
+      "mini_wall_ms": 935
+    },
+    "seed2-097": {
+      "mini_in": 736,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1102
+    },
+    "seed2-098": {
+      "mini_in": 736,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1256
+    },
+    "seed2-099": {
+      "mini_in": 729,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 401,
+          "out": 95
+        }
+      ],
+      "mini_wall_ms": 1120
+    },
+    "seed2-100": {
+      "mini_in": 734,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1051
+    },
+    "seed2-101": {
+      "mini_in": 737,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1309
+    },
+    "seed2-102": {
+      "mini_in": 729,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1326
+    },
+    "seed2-103": {
+      "mini_in": 735,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1053
+    },
+    "seed2-104": {
+      "mini_in": 734,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1403
+    },
+    "seed2-105": {
+      "mini_in": 744,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 413,
+          "out": 102
+        }
+      ],
+      "mini_wall_ms": 1178
+    },
+    "seed2-106": {
+      "mini_in": 732,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1136
+    },
+    "seed2-107": {
+      "mini_in": 732,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 994
+    },
+    "seed2-108": {
+      "mini_in": 728,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1114
+    },
+    "seed2-109": {
+      "mini_in": 739,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 949
+    },
+    "seed2-110": {
+      "mini_in": 726,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1136
+    },
+    "seed2-111": {
+      "mini_in": 726,
+      "mini_out": 49,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1272
+    },
+    "seed2-112": {
+      "mini_in": 744,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1249
+    },
+    "seed2-113": {
+      "mini_in": 742,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1357
+    },
+    "seed2-114": {
+      "mini_in": 744,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1197
+    },
+    "seed2-115": {
+      "mini_in": 749,
+      "mini_out": 78,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 430,
+          "out": 160
+        }
+      ],
+      "mini_wall_ms": 1432
+    },
+    "seed2-116": {
+      "mini_in": 755,
+      "mini_out": 123,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1646
+    },
+    "seed2-117": {
+      "mini_in": 753,
+      "mini_out": 122,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1705
+    },
+    "seed2-118": {
+      "mini_in": 756,
+      "mini_out": 123,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1526
+    },
+    "seed2-119": {
+      "mini_in": 755,
+      "mini_out": 122,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1726
+    },
+    "seed2-120": {
+      "mini_in": 737,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1006
+    },
+    "seed2-121": {
+      "mini_in": 741,
+      "mini_out": 52,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1022
+    },
+    "seed2-122": {
+      "mini_in": 742,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1126
+    },
+    "seed2-123": {
+      "mini_in": 742,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1535
+    },
+    "seed2-124": {
+      "mini_in": 736,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1024
+    },
+    "seed2-125": {
+      "mini_in": 733,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1534
+    },
+    "seed2-126": {
+      "mini_in": 734,
+      "mini_out": 56,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1203
+    },
+    "seed2-127": {
+      "mini_in": 733,
+      "mini_out": 54,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1121
+    },
+    "seed2-128": {
+      "mini_in": 729,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 957
+    },
+    "seed2-129": {
+      "mini_in": 744,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1322
+    },
+    "seed2-130": {
+      "mini_in": 726,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1021
+    },
+    "seed2-131": {
+      "mini_in": 732,
+      "mini_out": 51,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1126
+    },
+    "seed2-132": {
+      "mini_in": 735,
+      "mini_out": 55,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 406,
+          "out": 102
+        }
+      ],
+      "mini_wall_ms": 1034
+    },
+    "seed2-133": {
+      "mini_in": 733,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1022
+    },
+    "seed2-134": {
+      "mini_in": 737,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1129
+    },
+    "seed2-135": {
+      "mini_in": 738,
+      "mini_out": 50,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1121
+    },
+    "seed2-136": {
+      "mini_in": 742,
+      "mini_out": 53,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 1021
+    },
+    "seed2-137": {
+      "mini_in": 720,
+      "mini_out": 23,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 783
+    },
+    "seed2-138": {
+      "mini_in": 723,
+      "mini_out": 23,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 703
+    },
+    "seed2-139": {
+      "mini_in": 730,
+      "mini_out": 96,
+      "mini_error": null,
+      "second": [
+        {
+          "in": 399,
+          "out": 32
+        }
+      ],
+      "mini_wall_ms": 1586
+    },
+    "seed2-140": {
+      "mini_in": 730,
+      "mini_out": 23,
+      "mini_error": null,
+      "second": [],
+      "mini_wall_ms": 815
+    }
+  },
+  "seed2_061": {
+    "off": 400,
+    "on": 400,
+    "credit_off": null,
+    "row": {
+      "id": "seed2-061",
+      "error": null,
+      "second_called": false,
+      "second_error": null,
+      "second_ms": null,
+      "asked": [],
+      "mini_ms": 1393,
+      "off_status": 400,
+      "on_status": 400,
+      "mini_wrong": false
+    }
+  },
+  "base": {
+    "commit": "3e69e0e + merge refs/pull/205/head 779fb17 (no commit)",
+    "prompt": "C:\\Users\\user\\Desktop\\말로해\\echobill\\echobill-final\\configs\\prompts\\parse_llm_system_p3.txt",
+    "second_model": "gemini-3.1-flash-lite",
+    "golden": "C:\\Users\\user\\Desktop\\말로해\\echobill\\echobill-seed2\\data\\seed\\seed_v2_improve.jsonl"
+  }
+}

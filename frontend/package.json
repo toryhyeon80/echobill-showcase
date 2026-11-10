@@ -1,0 +1,37 @@
+{
+  "name": "echobill-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "api:types": "openapi-typescript http://127.0.0.1:8000/openapi.json -o src/types/generated.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "test": "node scripts/test.mjs",
+    "api:types:check": "node scripts/check-api-types.mjs",
+    "api:types:local": "node scripts/check-api-types.mjs --write"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "lucide-react": "^1.52.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-test-renderer": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "esbuild": "^0.25.12",
+    "openapi-typescript": "^7.13.0",
+    "react-test-renderer": "^18.3.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.6.3",
+    "vite": "^6.4.3"
+  }
+}

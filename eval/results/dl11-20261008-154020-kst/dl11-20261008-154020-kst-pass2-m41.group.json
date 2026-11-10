@@ -1,0 +1,31 @@
+{
+  "group_id": "dl11-20261008-154020-kst-pass2-m41",
+  "runs": [
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-m41-r1",
+      "transaction_correct": 30,
+      "amount_correct": 44,
+      "required_f1_pct": 96.0663,
+      "over_deadline_rate": 0.0
+    },
+    {
+      "run_id": "dl11-20261008-154020-kst-pass2-m41-r2",
+      "transaction_correct": 29,
+      "amount_correct": 44,
+      "required_f1_pct": 95.8506,
+      "over_deadline_rate": 0.0
+    }
+  ],
+  "median_run_id": "dl11-20261008-154020-kst-pass2-m41-r2",
+  "spread": {
+    "transaction_correct": 1,
+    "amount_correct": 0,
+    "required_f1_pct": 0.2157
+  },
+  "unstable_record_ids": [
+    "g-dev-002"
+  ],
+  "response_models": [
+    "gpt-4.1-mini-2025-04-14"
+  ]
+}

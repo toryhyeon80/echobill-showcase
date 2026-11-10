@@ -1,0 +1,3871 @@
+{
+  "generated_at": "2026-10-30T12:52:54+09:00",
+  "frame": "steps_report v1 (저장된 출력 재생: 정규화→AI(저장값)→후처리→검증)",
+  "git_commit": "e33baa5bbbebdc110dad1dcf248e4db72e07e51d",
+  "git_dirty": false,
+  "scoring_version": "v1.4",
+  "normalizer_version": "ko-num-1.5",
+  "repeats": 30,
+  "deadline_ms": 5000,
+  "machine": "Windows 11 · Intel64 Family 6 Model 189 Stepping 1, GenuineIntel · Python 3.12.14",
+  "ko_numeral_reference": {
+    "source": "eval/results/ko-numeral-off-on-20261001.md",
+    "transaction_exact": {
+      "off": "23/42 (54.76%)",
+      "on": "40/42 (95.24%)",
+      "delta": "+17건"
+    },
+    "amount_exact": {
+      "off": "39/56 (69.64%)",
+      "on": "55/56 (98.21%)",
+      "delta": "+16건"
+    },
+    "required_f1": {
+      "off": "89.94%",
+      "on": "98.78%",
+      "delta": "+8.84%p"
+    }
+  },
+  "datasets": {
+    "dev": [
+      {
+        "run_id": "gpt-4o-mini-20261021-120731-kst-mini30-r1",
+        "split": "개발용 Golden",
+        "ai_measured_at": "2026-10-21T12:08:54+09:00",
+        "golden_file": "data/golden/golden_dev.jsonl",
+        "golden_sha256": "570110e27ff09a765b09570f39c1bc62980196fcfa40e7f5020f35bacad4ba50",
+        "predictions_file": "handoff/runs/dev60_30s/gpt-4o-mini-20261021-120731-kst-mini30-r1.predictions.jsonl",
+        "scoring_version_at_run": "v1.4",
+        "model": "gpt-4o-mini",
+        "prompt_file": "configs/prompts/parse_llm_system_p3.txt",
+        "run_git_commit": "f19578cc330490704f6e2dde7fe9a80ce58154be",
+        "ko_numeral_normalize": true,
+        "postprocess_version": "pp-1.5",
+        "records": 60,
+        "sent_text_mismatch_ids": [],
+        "points": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 39,
+              "total": 42,
+              "rate": 0.928571
+            },
+            "amount_exact": {
+              "correct": 54,
+              "total": 56,
+              "rate": 0.964286
+            },
+            "required_f1": 0.985743,
+            "wrong_saved_normal": {
+              "count": 3,
+              "ids": [
+                "g-dev-013",
+                "g-dev-028",
+                "g-dev-049"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 18,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-020",
+                "g-dev-026",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 3,
+              "ids": [
+                "g-dev-004",
+                "g-dev-009",
+                "g-dev-034"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 39,
+              "total": 42,
+              "rate": 0.928571
+            },
+            "amount_exact": {
+              "correct": 54,
+              "total": 56,
+              "rate": 0.964286
+            },
+            "required_f1": 0.985743,
+            "wrong_saved_normal": {
+              "count": 3,
+              "ids": [
+                "g-dev-013",
+                "g-dev-028",
+                "g-dev-049"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 18,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-020",
+                "g-dev-026",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 39,
+              "total": 42,
+              "rate": 0.928571
+            },
+            "amount_exact": {
+              "correct": 54,
+              "total": 56,
+              "rate": 0.964286
+            },
+            "required_f1": 0.985743,
+            "wrong_saved_normal": {
+              "count": 1,
+              "ids": [
+                "g-dev-028"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 1,
+              "ids": [
+                "g-dev-026"
+              ]
+            },
+            "asked_400": {
+              "count": 19,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-013",
+                "g-dev-020",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-049",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        },
+        "rule_effects": {
+          "credit_cleared_no_word": {
+            "applied": 3,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-004",
+              "g-dev-009",
+              "g-dev-034"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "credit_from_text": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-026"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "item_amount_invented": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-056"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": [
+              "g-dev-056"
+            ]
+          },
+          "pack_spec_qty_cleared": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-057"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "total_restored_spoken": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-007"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "unit_price_cleared": {
+            "applied": 28,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 18,
+            "confirmation_sentences": [
+              "g-dev-001",
+              "g-dev-004",
+              "g-dev-007",
+              "g-dev-009",
+              "g-dev-020",
+              "g-dev-026",
+              "g-dev-034",
+              "g-dev-037",
+              "g-dev-055",
+              "g-dev-056"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": [
+              "g-dev-056"
+            ]
+          },
+          "unit_price_to_amount": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-007"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": []
+          }
+        },
+        "cases": {
+          "g-dev-056": {
+            "reasons": [
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "추가 확인 필요",
+            "required_clarifications": [
+              "items"
+            ],
+            "ai_credit": true,
+            "ai_transaction_type": "sale",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 32000 → None",
+              "items[0].unit_price: 4000 → None",
+              "items[1].unit_price: 6000 → None",
+              "items[1].amount: 18000 → None",
+              "items[2].unit_price: 8000 → None",
+              "items[3].unit_price: 12000 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "EXCEED_MAX_ITEMS",
+              "problem_fields": [
+                "items"
+              ]
+            }
+          }
+        },
+        "time": {
+          "local_steps_ms": {
+            "normalize": {
+              "p50": 0.08,
+              "p95": 0.18,
+              "max": 0.19,
+              "n": 60
+            },
+            "postprocess": {
+              "p50": 0.11,
+              "p95": 0.22,
+              "max": 0.28,
+              "n": 60
+            },
+            "validate": {
+              "p50": 0.18,
+              "p95": 0.37,
+              "max": 0.41,
+              "n": 60
+            }
+          },
+          "ai_processing_time_ms": {
+            "p50": 1269,
+            "p95": 1664,
+            "max": 3521,
+            "n": 60
+          },
+          "ai_wall_time_ms": {
+            "p50": 1300,
+            "p95": 1694,
+            "max": 3631,
+            "n": 60
+          },
+          "total_ms": {
+            "p50": 1300.45,
+            "p95": 1694.63,
+            "max": 3631.36,
+            "n": 60
+          },
+          "ratio_of_deadline": {
+            "p50": 0.2601,
+            "p95": 0.3389,
+            "max": 0.7263
+          },
+          "over_deadline": {
+            "count": 0,
+            "total": 60,
+            "ids": [],
+            "detail": []
+          }
+        }
+      },
+      {
+        "run_id": "gpt-4o-mini-20261021-120731-kst-mini30-r2",
+        "split": "개발용 Golden",
+        "ai_measured_at": "2026-10-21T12:15:51+09:00",
+        "golden_file": "data/golden/golden_dev.jsonl",
+        "golden_sha256": "570110e27ff09a765b09570f39c1bc62980196fcfa40e7f5020f35bacad4ba50",
+        "predictions_file": "handoff/runs/dev60_30s/gpt-4o-mini-20261021-120731-kst-mini30-r2.predictions.jsonl",
+        "scoring_version_at_run": "v1.4",
+        "model": "gpt-4o-mini",
+        "prompt_file": "configs/prompts/parse_llm_system_p3.txt",
+        "run_git_commit": "f19578cc330490704f6e2dde7fe9a80ce58154be",
+        "ko_numeral_normalize": true,
+        "postprocess_version": "pp-1.5",
+        "records": 60,
+        "sent_text_mismatch_ids": [],
+        "points": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 40,
+              "total": 42,
+              "rate": 0.952381
+            },
+            "amount_exact": {
+              "correct": 53,
+              "total": 56,
+              "rate": 0.946429
+            },
+            "required_f1": 0.987805,
+            "wrong_saved_normal": {
+              "count": 2,
+              "ids": [
+                "g-dev-028",
+                "g-dev-049"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 18,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-020",
+                "g-dev-026",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 3,
+              "ids": [
+                "g-dev-004",
+                "g-dev-009",
+                "g-dev-034"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 40,
+              "total": 42,
+              "rate": 0.952381
+            },
+            "amount_exact": {
+              "correct": 54,
+              "total": 56,
+              "rate": 0.964286
+            },
+            "required_f1": 0.987805,
+            "wrong_saved_normal": {
+              "count": 2,
+              "ids": [
+                "g-dev-028",
+                "g-dev-049"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 18,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-020",
+                "g-dev-026",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 40,
+              "total": 42,
+              "rate": 0.952381
+            },
+            "amount_exact": {
+              "correct": 54,
+              "total": 56,
+              "rate": 0.964286
+            },
+            "required_f1": 0.987805,
+            "wrong_saved_normal": {
+              "count": 1,
+              "ids": [
+                "g-dev-028"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 1,
+              "ids": [
+                "g-dev-026"
+              ]
+            },
+            "asked_400": {
+              "count": 18,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-020",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-049",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        },
+        "rule_effects": {
+          "credit_cleared_no_word": {
+            "applied": 3,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-004",
+              "g-dev-009",
+              "g-dev-034"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-004"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "credit_from_text": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-026"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "item_amount_invented": {
+            "applied": 3,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-004",
+              "g-dev-020",
+              "g-dev-056"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-004"
+            ],
+            "amount_right_to_wrong": [
+              "g-dev-056"
+            ]
+          },
+          "pack_spec_qty_cleared": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-057"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "total_restored_spoken": {
+            "applied": 2,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-004",
+              "g-dev-007"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-004",
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "unit_price_cleared": {
+            "applied": 28,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 18,
+            "confirmation_sentences": [
+              "g-dev-001",
+              "g-dev-004",
+              "g-dev-007",
+              "g-dev-009",
+              "g-dev-020",
+              "g-dev-026",
+              "g-dev-034",
+              "g-dev-037",
+              "g-dev-055",
+              "g-dev-056"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-004",
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": [
+              "g-dev-056"
+            ]
+          },
+          "unit_price_to_amount": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-007"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": []
+          }
+        },
+        "cases": {
+          "g-dev-056": {
+            "reasons": [
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "추가 확인 필요",
+            "required_clarifications": [
+              "items"
+            ],
+            "ai_credit": true,
+            "ai_transaction_type": "sale",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 32000 → None",
+              "items[0].unit_price: 4000 → None",
+              "items[1].unit_price: 6000 → None",
+              "items[1].amount: 18000 → None",
+              "items[2].unit_price: 8000 → None",
+              "items[3].unit_price: 12000 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "EXCEED_MAX_ITEMS",
+              "problem_fields": [
+                "items"
+              ]
+            }
+          }
+        },
+        "time": {
+          "local_steps_ms": {
+            "normalize": {
+              "p50": 0.09,
+              "p95": 0.29,
+              "max": 0.32,
+              "n": 60
+            },
+            "postprocess": {
+              "p50": 0.13,
+              "p95": 0.28,
+              "max": 0.46,
+              "n": 60
+            },
+            "validate": {
+              "p50": 0.21,
+              "p95": 0.58,
+              "max": 0.62,
+              "n": 60
+            }
+          },
+          "ai_processing_time_ms": {
+            "p50": 1281,
+            "p95": 1705,
+            "max": 1868,
+            "n": 60
+          },
+          "ai_wall_time_ms": {
+            "p50": 1306,
+            "p95": 1744,
+            "max": 1899,
+            "n": 60
+          },
+          "total_ms": {
+            "p50": 1306.89,
+            "p95": 1745.38,
+            "max": 1900.29,
+            "n": 60
+          },
+          "ratio_of_deadline": {
+            "p50": 0.2614,
+            "p95": 0.3491,
+            "max": 0.3801
+          },
+          "over_deadline": {
+            "count": 0,
+            "total": 60,
+            "ids": [],
+            "detail": []
+          }
+        }
+      },
+      {
+        "run_id": "gpt-4o-mini-20261021-120731-kst-mini30-r3",
+        "split": "개발용 Golden",
+        "ai_measured_at": "2026-10-21T12:23:34+09:00",
+        "golden_file": "data/golden/golden_dev.jsonl",
+        "golden_sha256": "570110e27ff09a765b09570f39c1bc62980196fcfa40e7f5020f35bacad4ba50",
+        "predictions_file": "handoff/runs/dev60_30s/gpt-4o-mini-20261021-120731-kst-mini30-r3.predictions.jsonl",
+        "scoring_version_at_run": "v1.4",
+        "model": "gpt-4o-mini",
+        "prompt_file": "configs/prompts/parse_llm_system_p3.txt",
+        "run_git_commit": "f19578cc330490704f6e2dde7fe9a80ce58154be",
+        "ko_numeral_normalize": true,
+        "postprocess_version": "pp-1.5",
+        "records": 60,
+        "sent_text_mismatch_ids": [],
+        "points": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 38,
+              "total": 42,
+              "rate": 0.904762
+            },
+            "amount_exact": {
+              "correct": 53,
+              "total": 56,
+              "rate": 0.946429
+            },
+            "required_f1": 0.975309,
+            "wrong_saved_normal": {
+              "count": 3,
+              "ids": [
+                "g-dev-013",
+                "g-dev-028",
+                "g-dev-049"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 18,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-020",
+                "g-dev-026",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 3,
+              "ids": [
+                "g-dev-004",
+                "g-dev-009",
+                "g-dev-034"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 1
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 38,
+              "total": 42,
+              "rate": 0.904762
+            },
+            "amount_exact": {
+              "correct": 53,
+              "total": 56,
+              "rate": 0.946429
+            },
+            "required_f1": 0.975309,
+            "wrong_saved_normal": {
+              "count": 3,
+              "ids": [
+                "g-dev-013",
+                "g-dev-028",
+                "g-dev-049"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 18,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-020",
+                "g-dev-026",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 1
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 38,
+              "total": 42,
+              "rate": 0.904762
+            },
+            "amount_exact": {
+              "correct": 53,
+              "total": 56,
+              "rate": 0.946429
+            },
+            "required_f1": 0.975309,
+            "wrong_saved_normal": {
+              "count": 1,
+              "ids": [
+                "g-dev-028"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 1,
+              "ids": [
+                "g-dev-026"
+              ]
+            },
+            "asked_400": {
+              "count": 19,
+              "ids": [
+                "g-dev-001",
+                "g-dev-004",
+                "g-dev-007",
+                "g-dev-009",
+                "g-dev-013",
+                "g-dev-020",
+                "g-dev-034",
+                "g-dev-035",
+                "g-dev-036",
+                "g-dev-037",
+                "g-dev-038",
+                "g-dev-039",
+                "g-dev-049",
+                "g-dev-055",
+                "g-dev-056",
+                "g-dev-057",
+                "g-dev-058",
+                "g-dev-059",
+                "g-dev-060"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 1
+          }
+        },
+        "rule_effects": {
+          "credit_cleared_no_word": {
+            "applied": 3,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-004",
+              "g-dev-009",
+              "g-dev-034"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "credit_from_text": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-026"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "item_amount_invented": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-056"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": [
+              "g-dev-056"
+            ]
+          },
+          "pack_spec_qty_cleared": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-057"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "total_restored_spoken": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-007"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "unit_price_cleared": {
+            "applied": 27,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 17,
+            "confirmation_sentences": [
+              "g-dev-001",
+              "g-dev-004",
+              "g-dev-007",
+              "g-dev-009",
+              "g-dev-020",
+              "g-dev-026",
+              "g-dev-034",
+              "g-dev-037",
+              "g-dev-055",
+              "g-dev-056"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": [
+              "g-dev-056"
+            ]
+          },
+          "unit_price_to_amount": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "g-dev-007"
+            ],
+            "amount_wrong_to_right": [
+              "g-dev-007"
+            ],
+            "amount_right_to_wrong": []
+          }
+        },
+        "cases": {
+          "g-dev-056": {
+            "reasons": [
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "추가 확인 필요",
+            "required_clarifications": [
+              "items"
+            ],
+            "ai_credit": true,
+            "ai_transaction_type": "sale",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 32000 → None",
+              "items[0].unit_price: 4000 → None",
+              "items[1].unit_price: 6000 → None",
+              "items[1].amount: 18000 → None",
+              "items[2].unit_price: 8000 → None",
+              "items[3].unit_price: 12000 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "EXCEED_MAX_ITEMS",
+              "problem_fields": [
+                "items"
+              ]
+            }
+          }
+        },
+        "time": {
+          "local_steps_ms": {
+            "normalize": {
+              "p50": 0.09,
+              "p95": 0.21,
+              "max": 0.24,
+              "n": 60
+            },
+            "postprocess": {
+              "p50": 0.12,
+              "p95": 0.33,
+              "max": 0.44,
+              "n": 60
+            },
+            "validate": {
+              "p50": 0.24,
+              "p95": 0.44,
+              "max": 0.49,
+              "n": 60
+            }
+          },
+          "ai_processing_time_ms": {
+            "p50": 1248,
+            "p95": 1953,
+            "max": 2374,
+            "n": 59
+          },
+          "ai_wall_time_ms": {
+            "p50": 1262,
+            "p95": 1969,
+            "max": 28349,
+            "n": 60
+          },
+          "total_ms": {
+            "p50": 1262.97,
+            "p95": 1969.98,
+            "max": 28349.07,
+            "n": 60
+          },
+          "ratio_of_deadline": {
+            "p50": 0.2526,
+            "p95": 0.394,
+            "max": 5.6698
+          },
+          "over_deadline": {
+            "count": 1,
+            "total": 60,
+            "ids": [
+              "g-dev-006"
+            ],
+            "detail": [
+              {
+                "id": "g-dev-006",
+                "processing_time_ms": null,
+                "wall_time_ms": 28349,
+                "error_type": "InternalServerError"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "seed2": [
+      {
+        "run_id": "gpt-4o-mini-20261023-153539-kst-mini30-r1",
+        "split": "Seed",
+        "ai_measured_at": "2026-10-23T15:39:22+09:00",
+        "golden_file": "echobill-seed2/data/seed/seed_v2_improve.jsonl",
+        "golden_sha256": "45305219894d55ff3798f007c312bdbd5b9357f464166180ca702ec7147746a8",
+        "predictions_file": "handoff/runs/seed2_haiku_20261023/gpt-4o-mini-20261023-153539-kst-mini30-r1.predictions.jsonl",
+        "scoring_version_at_run": "v1.4",
+        "model": "gpt-4o-mini",
+        "prompt_file": "configs/prompts/parse_llm_system_p3.txt",
+        "run_git_commit": "2b916b2dd5b30b621b8e8e2f1ee464db688628f5",
+        "ko_numeral_normalize": true,
+        "postprocess_version": "pp-1.5",
+        "records": 140,
+        "sent_text_mismatch_ids": [
+          "seed2-010",
+          "seed2-027",
+          "seed2-031",
+          "seed2-069"
+        ],
+        "points": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 82,
+              "total": 96,
+              "rate": 0.854167
+            },
+            "amount_exact": {
+              "correct": 114,
+              "total": 123,
+              "rate": 0.926829
+            },
+            "required_f1": 0.953767,
+            "wrong_saved_normal": {
+              "count": 14,
+              "ids": [
+                "seed2-007",
+                "seed2-021",
+                "seed2-023",
+                "seed2-024",
+                "seed2-031",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 44,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 9,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-139"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 83,
+              "total": 96,
+              "rate": 0.864583
+            },
+            "amount_exact": {
+              "correct": 118,
+              "total": 123,
+              "rate": 0.95935
+            },
+            "required_f1": 0.954584,
+            "wrong_saved_normal": {
+              "count": 13,
+              "ids": [
+                "seed2-007",
+                "seed2-024",
+                "seed2-031",
+                "seed2-041",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 44,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 83,
+              "total": 96,
+              "rate": 0.864583
+            },
+            "amount_exact": {
+              "correct": 118,
+              "total": 123,
+              "rate": 0.95935
+            },
+            "required_f1": 0.954584,
+            "wrong_saved_normal": {
+              "count": 7,
+              "ids": [
+                "seed2-024",
+                "seed2-031",
+                "seed2-056",
+                "seed2-083",
+                "seed2-094",
+                "seed2-095",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 1,
+              "ids": [
+                "seed2-110"
+              ]
+            },
+            "asked_400": {
+              "count": 49,
+              "ids": [
+                "seed2-007",
+                "seed2-010",
+                "seed2-041",
+                "seed2-044",
+                "seed2-061",
+                "seed2-091",
+                "seed2-093",
+                "seed2-096",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        },
+        "rule_effects": {
+          "credit_cleared_negated": {
+            "applied": 2,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-010",
+              "seed2-061"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "credit_cleared_no_word": {
+            "applied": 11,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-104",
+              "seed2-105",
+              "seed2-106",
+              "seed2-107",
+              "seed2-108",
+              "seed2-109",
+              "seed2-131",
+              "seed2-132",
+              "seed2-135",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-096",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "credit_cleared_partial_payment": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-136"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "item_amount_invented": {
+            "applied": 7,
+            "wrong_to_right": [
+              "seed2-023"
+            ],
+            "right_to_wrong": [
+              "seed2-041"
+            ],
+            "unchanged": 2,
+            "confirmation_sentences": [
+              "seed2-102",
+              "seed2-132",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-023"
+            ],
+            "amount_right_to_wrong": [
+              "seed2-041",
+              "seed2-093"
+            ]
+          },
+          "total_restored_spoken": {
+            "applied": 6,
+            "wrong_to_right": [
+              "seed2-021",
+              "seed2-023"
+            ],
+            "right_to_wrong": [],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-101",
+              "seed2-105",
+              "seed2-132"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-023",
+              "seed2-096",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "total_restored_stated": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-114"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-114"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "unit_price_cleared": {
+            "applied": 70,
+            "wrong_to_right": [
+              "seed2-021",
+              "seed2-023"
+            ],
+            "right_to_wrong": [
+              "seed2-041"
+            ],
+            "unchanged": 54,
+            "confirmation_sentences": [
+              "seed2-010",
+              "seed2-099",
+              "seed2-101",
+              "seed2-103",
+              "seed2-105",
+              "seed2-107",
+              "seed2-108",
+              "seed2-110",
+              "seed2-111",
+              "seed2-115",
+              "seed2-132",
+              "seed2-136",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-023",
+              "seed2-096",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": [
+              "seed2-041",
+              "seed2-093"
+            ]
+          },
+          "unit_price_to_amount": {
+            "applied": 6,
+            "wrong_to_right": [
+              "seed2-021"
+            ],
+            "right_to_wrong": [],
+            "unchanged": 2,
+            "confirmation_sentences": [
+              "seed2-099",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          }
+        },
+        "cases": {
+          "seed2-041": {
+            "reasons": [
+              "후처리로 거래 맞음→틀림",
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "정상 구조화 가능",
+            "required_clarifications": [],
+            "ai_credit": true,
+            "ai_transaction_type": "sale",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 13100 → None",
+              "items[0].unit_price: 5800 → None",
+              "items[0].amount: 11600 → None",
+              "items[1].unit_price: 7300 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "MISSING_REQUIRED_FIELD",
+              "problem_fields": [
+                "total_amount"
+              ]
+            }
+          },
+          "seed2-093": {
+            "reasons": [
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "정상 구조화 가능",
+            "required_clarifications": [],
+            "ai_credit": false,
+            "ai_transaction_type": "purchase",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 534600 → None",
+              "items[0].unit_price: 22 → None",
+              "items[0].amount: 242000 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "MISSING_REQUIRED_FIELD",
+              "problem_fields": [
+                "total_amount"
+              ]
+            }
+          }
+        },
+        "time": {
+          "local_steps_ms": {
+            "normalize": {
+              "p50": 0.1,
+              "p95": 0.22,
+              "max": 0.28,
+              "n": 140
+            },
+            "postprocess": {
+              "p50": 0.17,
+              "p95": 0.33,
+              "max": 0.4,
+              "n": 140
+            },
+            "validate": {
+              "p50": 0.21,
+              "p95": 0.44,
+              "max": 0.54,
+              "n": 140
+            }
+          },
+          "ai_processing_time_ms": {
+            "p50": 1437,
+            "p95": 2094,
+            "max": 4702,
+            "n": 140
+          },
+          "ai_wall_time_ms": {
+            "p50": 1476,
+            "p95": 2128,
+            "max": 4950,
+            "n": 140
+          },
+          "total_ms": {
+            "p50": 1476.26,
+            "p95": 2128.59,
+            "max": 4950.53,
+            "n": 140
+          },
+          "ratio_of_deadline": {
+            "p50": 0.2953,
+            "p95": 0.4257,
+            "max": 0.9901
+          },
+          "over_deadline": {
+            "count": 0,
+            "total": 140,
+            "ids": [],
+            "detail": []
+          }
+        },
+        "points_excluding_mismatch": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 80,
+              "total": 93,
+              "rate": 0.860215
+            },
+            "amount_exact": {
+              "correct": 111,
+              "total": 119,
+              "rate": 0.932773
+            },
+            "required_f1": 0.956063,
+            "wrong_saved_normal": {
+              "count": 13,
+              "ids": [
+                "seed2-007",
+                "seed2-021",
+                "seed2-023",
+                "seed2-024",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 43,
+              "ids": [
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 8,
+              "ids": [
+                "seed2-061",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-139"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 81,
+              "total": 93,
+              "rate": 0.870968
+            },
+            "amount_exact": {
+              "correct": 115,
+              "total": 119,
+              "rate": 0.966387
+            },
+            "required_f1": 0.956904,
+            "wrong_saved_normal": {
+              "count": 12,
+              "ids": [
+                "seed2-007",
+                "seed2-024",
+                "seed2-041",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 43,
+              "ids": [
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 81,
+              "total": 93,
+              "rate": 0.870968
+            },
+            "amount_exact": {
+              "correct": 115,
+              "total": 119,
+              "rate": 0.966387
+            },
+            "required_f1": 0.956904,
+            "wrong_saved_normal": {
+              "count": 6,
+              "ids": [
+                "seed2-024",
+                "seed2-056",
+                "seed2-083",
+                "seed2-094",
+                "seed2-095",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 1,
+              "ids": [
+                "seed2-110"
+              ]
+            },
+            "asked_400": {
+              "count": 48,
+              "ids": [
+                "seed2-007",
+                "seed2-041",
+                "seed2-044",
+                "seed2-061",
+                "seed2-091",
+                "seed2-093",
+                "seed2-096",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        }
+      },
+      {
+        "run_id": "gpt-4o-mini-20261023-153539-kst-mini30-r2",
+        "split": "Seed",
+        "ai_measured_at": "2026-10-23T15:46:45+09:00",
+        "golden_file": "echobill-seed2/data/seed/seed_v2_improve.jsonl",
+        "golden_sha256": "45305219894d55ff3798f007c312bdbd5b9357f464166180ca702ec7147746a8",
+        "predictions_file": "handoff/runs/seed2_haiku_20261023/gpt-4o-mini-20261023-153539-kst-mini30-r2.predictions.jsonl",
+        "scoring_version_at_run": "v1.4",
+        "model": "gpt-4o-mini",
+        "prompt_file": "configs/prompts/parse_llm_system_p3.txt",
+        "run_git_commit": "2b916b2dd5b30b621b8e8e2f1ee464db688628f5",
+        "ko_numeral_normalize": true,
+        "postprocess_version": "pp-1.5",
+        "records": 140,
+        "sent_text_mismatch_ids": [
+          "seed2-010",
+          "seed2-027",
+          "seed2-031",
+          "seed2-069"
+        ],
+        "points": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 82,
+              "total": 96,
+              "rate": 0.854167
+            },
+            "amount_exact": {
+              "correct": 116,
+              "total": 123,
+              "rate": 0.943089
+            },
+            "required_f1": 0.954584,
+            "wrong_saved_normal": {
+              "count": 14,
+              "ids": [
+                "seed2-007",
+                "seed2-021",
+                "seed2-023",
+                "seed2-024",
+                "seed2-027",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 44,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 9,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-139"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 83,
+              "total": 96,
+              "rate": 0.864583
+            },
+            "amount_exact": {
+              "correct": 120,
+              "total": 123,
+              "rate": 0.97561
+            },
+            "required_f1": 0.956298,
+            "wrong_saved_normal": {
+              "count": 13,
+              "ids": [
+                "seed2-007",
+                "seed2-024",
+                "seed2-027",
+                "seed2-041",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 44,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 83,
+              "total": 96,
+              "rate": 0.864583
+            },
+            "amount_exact": {
+              "correct": 120,
+              "total": 123,
+              "rate": 0.97561
+            },
+            "required_f1": 0.956298,
+            "wrong_saved_normal": {
+              "count": 8,
+              "ids": [
+                "seed2-024",
+                "seed2-027",
+                "seed2-056",
+                "seed2-083",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 1,
+              "ids": [
+                "seed2-110"
+              ]
+            },
+            "asked_400": {
+              "count": 48,
+              "ids": [
+                "seed2-007",
+                "seed2-010",
+                "seed2-041",
+                "seed2-044",
+                "seed2-061",
+                "seed2-091",
+                "seed2-096",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        },
+        "rule_effects": {
+          "credit_cleared_negated": {
+            "applied": 2,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-010",
+              "seed2-061"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "credit_cleared_no_word": {
+            "applied": 11,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-104",
+              "seed2-105",
+              "seed2-106",
+              "seed2-107",
+              "seed2-108",
+              "seed2-109",
+              "seed2-131",
+              "seed2-132",
+              "seed2-135",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-096",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "credit_cleared_partial_payment": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-136"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "item_amount_invented": {
+            "applied": 6,
+            "wrong_to_right": [
+              "seed2-023"
+            ],
+            "right_to_wrong": [
+              "seed2-041"
+            ],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-102",
+              "seed2-132",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-023"
+            ],
+            "amount_right_to_wrong": [
+              "seed2-041"
+            ]
+          },
+          "total_restored_spoken": {
+            "applied": 5,
+            "wrong_to_right": [
+              "seed2-021",
+              "seed2-023"
+            ],
+            "right_to_wrong": [],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-105",
+              "seed2-132"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-023",
+              "seed2-096",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "total_restored_stated": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-114"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-114"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "unit_price_cleared": {
+            "applied": 67,
+            "wrong_to_right": [
+              "seed2-021",
+              "seed2-023"
+            ],
+            "right_to_wrong": [
+              "seed2-041"
+            ],
+            "unchanged": 51,
+            "confirmation_sentences": [
+              "seed2-010",
+              "seed2-099",
+              "seed2-103",
+              "seed2-105",
+              "seed2-106",
+              "seed2-107",
+              "seed2-108",
+              "seed2-110",
+              "seed2-111",
+              "seed2-115",
+              "seed2-132",
+              "seed2-136",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-023",
+              "seed2-096",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": [
+              "seed2-041"
+            ]
+          },
+          "unit_price_to_amount": {
+            "applied": 5,
+            "wrong_to_right": [
+              "seed2-021"
+            ],
+            "right_to_wrong": [],
+            "unchanged": 2,
+            "confirmation_sentences": [
+              "seed2-099",
+              "seed2-105"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          }
+        },
+        "cases": {
+          "seed2-041": {
+            "reasons": [
+              "후처리로 거래 맞음→틀림",
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "정상 구조화 가능",
+            "required_clarifications": [],
+            "ai_credit": true,
+            "ai_transaction_type": "sale",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 13100 → None",
+              "items[0].unit_price: 5800 → None",
+              "items[0].amount: 11600 → None",
+              "items[1].unit_price: 7300 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "MISSING_REQUIRED_FIELD",
+              "problem_fields": [
+                "total_amount"
+              ]
+            }
+          }
+        },
+        "time": {
+          "local_steps_ms": {
+            "normalize": {
+              "p50": 0.09,
+              "p95": 0.19,
+              "max": 0.29,
+              "n": 140
+            },
+            "postprocess": {
+              "p50": 0.16,
+              "p95": 0.27,
+              "max": 0.41,
+              "n": 140
+            },
+            "validate": {
+              "p50": 0.2,
+              "p95": 0.42,
+              "max": 0.57,
+              "n": 140
+            }
+          },
+          "ai_processing_time_ms": {
+            "p50": 1510,
+            "p95": 1968,
+            "max": 2432,
+            "n": 140
+          },
+          "ai_wall_time_ms": {
+            "p50": 1536,
+            "p95": 1999,
+            "max": 2458,
+            "n": 140
+          },
+          "total_ms": {
+            "p50": 1536.51,
+            "p95": 1999.94,
+            "max": 2458.43,
+            "n": 140
+          },
+          "ratio_of_deadline": {
+            "p50": 0.3073,
+            "p95": 0.4,
+            "max": 0.4917
+          },
+          "over_deadline": {
+            "count": 0,
+            "total": 140,
+            "ids": [],
+            "detail": []
+          }
+        },
+        "points_excluding_mismatch": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 80,
+              "total": 93,
+              "rate": 0.860215
+            },
+            "amount_exact": {
+              "correct": 112,
+              "total": 119,
+              "rate": 0.941176
+            },
+            "required_f1": 0.956828,
+            "wrong_saved_normal": {
+              "count": 13,
+              "ids": [
+                "seed2-007",
+                "seed2-021",
+                "seed2-023",
+                "seed2-024",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 43,
+              "ids": [
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 8,
+              "ids": [
+                "seed2-061",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-139"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 81,
+              "total": 93,
+              "rate": 0.870968
+            },
+            "amount_exact": {
+              "correct": 116,
+              "total": 119,
+              "rate": 0.97479
+            },
+            "required_f1": 0.95859,
+            "wrong_saved_normal": {
+              "count": 12,
+              "ids": [
+                "seed2-007",
+                "seed2-024",
+                "seed2-041",
+                "seed2-044",
+                "seed2-056",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 43,
+              "ids": [
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 81,
+              "total": 93,
+              "rate": 0.870968
+            },
+            "amount_exact": {
+              "correct": 116,
+              "total": 119,
+              "rate": 0.97479
+            },
+            "required_f1": 0.95859,
+            "wrong_saved_normal": {
+              "count": 7,
+              "ids": [
+                "seed2-024",
+                "seed2-056",
+                "seed2-083",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 1,
+              "ids": [
+                "seed2-110"
+              ]
+            },
+            "asked_400": {
+              "count": 47,
+              "ids": [
+                "seed2-007",
+                "seed2-041",
+                "seed2-044",
+                "seed2-061",
+                "seed2-091",
+                "seed2-096",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        }
+      },
+      {
+        "run_id": "gpt-4o-mini-20261023-153539-kst-mini30-r3",
+        "split": "Seed",
+        "ai_measured_at": "2026-10-23T15:54:14+09:00",
+        "golden_file": "echobill-seed2/data/seed/seed_v2_improve.jsonl",
+        "golden_sha256": "45305219894d55ff3798f007c312bdbd5b9357f464166180ca702ec7147746a8",
+        "predictions_file": "handoff/runs/seed2_haiku_20261023/gpt-4o-mini-20261023-153539-kst-mini30-r3.predictions.jsonl",
+        "scoring_version_at_run": "v1.4",
+        "model": "gpt-4o-mini",
+        "prompt_file": "configs/prompts/parse_llm_system_p3.txt",
+        "run_git_commit": "2b916b2dd5b30b621b8e8e2f1ee464db688628f5",
+        "ko_numeral_normalize": true,
+        "postprocess_version": "pp-1.5",
+        "records": 140,
+        "sent_text_mismatch_ids": [
+          "seed2-010",
+          "seed2-027",
+          "seed2-031",
+          "seed2-069"
+        ],
+        "points": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 81,
+              "total": 96,
+              "rate": 0.84375
+            },
+            "amount_exact": {
+              "correct": 115,
+              "total": 123,
+              "rate": 0.934959
+            },
+            "required_f1": 0.952951,
+            "wrong_saved_normal": {
+              "count": 15,
+              "ids": [
+                "seed2-007",
+                "seed2-021",
+                "seed2-023",
+                "seed2-027",
+                "seed2-031",
+                "seed2-044",
+                "seed2-056",
+                "seed2-080",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 44,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 9,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-139"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 82,
+              "total": 96,
+              "rate": 0.854167
+            },
+            "amount_exact": {
+              "correct": 118,
+              "total": 123,
+              "rate": 0.95935
+            },
+            "required_f1": 0.953767,
+            "wrong_saved_normal": {
+              "count": 14,
+              "ids": [
+                "seed2-007",
+                "seed2-027",
+                "seed2-031",
+                "seed2-041",
+                "seed2-044",
+                "seed2-056",
+                "seed2-080",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 44,
+              "ids": [
+                "seed2-010",
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 1,
+              "ids": [
+                "seed2-061"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 82,
+              "total": 96,
+              "rate": 0.854167
+            },
+            "amount_exact": {
+              "correct": 118,
+              "total": 123,
+              "rate": 0.95935
+            },
+            "required_f1": 0.953767,
+            "wrong_saved_normal": {
+              "count": 7,
+              "ids": [
+                "seed2-027",
+                "seed2-031",
+                "seed2-056",
+                "seed2-083",
+                "seed2-094",
+                "seed2-095",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 2,
+              "ids": [
+                "seed2-061",
+                "seed2-110"
+              ]
+            },
+            "asked_400": {
+              "count": 49,
+              "ids": [
+                "seed2-007",
+                "seed2-010",
+                "seed2-041",
+                "seed2-044",
+                "seed2-080",
+                "seed2-091",
+                "seed2-093",
+                "seed2-096",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 1,
+              "ids": [
+                "seed2-061"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        },
+        "rule_effects": {
+          "credit_cleared_negated": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-010"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "credit_cleared_no_word": {
+            "applied": 11,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-104",
+              "seed2-105",
+              "seed2-106",
+              "seed2-107",
+              "seed2-108",
+              "seed2-109",
+              "seed2-131",
+              "seed2-132",
+              "seed2-135",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-096",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "credit_cleared_partial_payment": {
+            "applied": 1,
+            "wrong_to_right": [],
+            "right_to_wrong": [],
+            "unchanged": 0,
+            "confirmation_sentences": [
+              "seed2-136"
+            ],
+            "amount_wrong_to_right": [],
+            "amount_right_to_wrong": []
+          },
+          "item_amount_invented": {
+            "applied": 7,
+            "wrong_to_right": [],
+            "right_to_wrong": [
+              "seed2-041"
+            ],
+            "unchanged": 3,
+            "confirmation_sentences": [
+              "seed2-102",
+              "seed2-132",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-096"
+            ],
+            "amount_right_to_wrong": [
+              "seed2-041",
+              "seed2-093"
+            ]
+          },
+          "total_restored_spoken": {
+            "applied": 6,
+            "wrong_to_right": [
+              "seed2-021",
+              "seed2-023"
+            ],
+            "right_to_wrong": [],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-101",
+              "seed2-105",
+              "seed2-132"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-023",
+              "seed2-096",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          },
+          "unit_price_cleared": {
+            "applied": 71,
+            "wrong_to_right": [
+              "seed2-021",
+              "seed2-023"
+            ],
+            "right_to_wrong": [
+              "seed2-041"
+            ],
+            "unchanged": 54,
+            "confirmation_sentences": [
+              "seed2-010",
+              "seed2-099",
+              "seed2-101",
+              "seed2-103",
+              "seed2-105",
+              "seed2-106",
+              "seed2-107",
+              "seed2-108",
+              "seed2-110",
+              "seed2-111",
+              "seed2-115",
+              "seed2-132",
+              "seed2-136",
+              "seed2-139"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-023",
+              "seed2-096",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": [
+              "seed2-041",
+              "seed2-093"
+            ]
+          },
+          "unit_price_to_amount": {
+            "applied": 6,
+            "wrong_to_right": [
+              "seed2-021",
+              "seed2-023"
+            ],
+            "right_to_wrong": [],
+            "unchanged": 1,
+            "confirmation_sentences": [
+              "seed2-099",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_wrong_to_right": [
+              "seed2-021",
+              "seed2-023",
+              "seed2-101",
+              "seed2-105"
+            ],
+            "amount_right_to_wrong": []
+          }
+        },
+        "cases": {
+          "seed2-041": {
+            "reasons": [
+              "후처리로 거래 맞음→틀림",
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "정상 구조화 가능",
+            "required_clarifications": [],
+            "ai_credit": true,
+            "ai_transaction_type": "sale",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 13100 → None",
+              "items[0].unit_price: 5800 → None",
+              "items[0].amount: 11600 → None",
+              "items[1].unit_price: 7300 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "MISSING_REQUIRED_FIELD",
+              "problem_fields": [
+                "total_amount"
+              ]
+            }
+          },
+          "seed2-061": {
+            "reasons": [
+              "(C)까지 외상 잘못 확정"
+            ],
+            "expected_outcome": "추가 확인 필요",
+            "required_clarifications": [
+              "credit"
+            ],
+            "ai_credit": false,
+            "ai_transaction_type": "sale",
+            "applied": [],
+            "changes": [],
+            "validation": {
+              "status_code": 200,
+              "error_code": null,
+              "problem_fields": []
+            }
+          },
+          "seed2-093": {
+            "reasons": [
+              "후처리로 금액 맞음→틀림"
+            ],
+            "expected_outcome": "정상 구조화 가능",
+            "required_clarifications": [],
+            "ai_credit": false,
+            "ai_transaction_type": "purchase",
+            "applied": [
+              "unit_price_cleared",
+              "item_amount_invented"
+            ],
+            "changes": [
+              "total_amount: 534600 → None",
+              "items[0].unit_price: 22 → None",
+              "items[0].amount: 242000 → None"
+            ],
+            "validation": {
+              "status_code": 400,
+              "error_code": "MISSING_REQUIRED_FIELD",
+              "problem_fields": [
+                "total_amount"
+              ]
+            }
+          }
+        },
+        "time": {
+          "local_steps_ms": {
+            "normalize": {
+              "p50": 0.09,
+              "p95": 0.23,
+              "max": 0.29,
+              "n": 140
+            },
+            "postprocess": {
+              "p50": 0.16,
+              "p95": 0.32,
+              "max": 0.43,
+              "n": 140
+            },
+            "validate": {
+              "p50": 0.19,
+              "p95": 0.45,
+              "max": 0.58,
+              "n": 140
+            }
+          },
+          "ai_processing_time_ms": {
+            "p50": 1511,
+            "p95": 2229,
+            "max": 3107,
+            "n": 140
+          },
+          "ai_wall_time_ms": {
+            "p50": 1536,
+            "p95": 2266,
+            "max": 3128,
+            "n": 140
+          },
+          "total_ms": {
+            "p50": 1536.54,
+            "p95": 2266.74,
+            "max": 3128.94,
+            "n": 140
+          },
+          "ratio_of_deadline": {
+            "p50": 0.3073,
+            "p95": 0.4533,
+            "max": 0.6258
+          },
+          "over_deadline": {
+            "count": 0,
+            "total": 140,
+            "ids": [],
+            "detail": []
+          }
+        },
+        "points_excluding_mismatch": {
+          "A_raw": {
+            "transaction_exact": {
+              "correct": 80,
+              "total": 93,
+              "rate": 0.860215
+            },
+            "amount_exact": {
+              "correct": 112,
+              "total": 119,
+              "rate": 0.941176
+            },
+            "required_f1": 0.958663,
+            "wrong_saved_normal": {
+              "count": 13,
+              "ids": [
+                "seed2-007",
+                "seed2-021",
+                "seed2-023",
+                "seed2-044",
+                "seed2-056",
+                "seed2-080",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 43,
+              "ids": [
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 8,
+              "ids": [
+                "seed2-061",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-139"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "B_postprocess": {
+            "transaction_exact": {
+              "correct": 81,
+              "total": 93,
+              "rate": 0.870968
+            },
+            "amount_exact": {
+              "correct": 115,
+              "total": 119,
+              "rate": 0.966387
+            },
+            "required_f1": 0.959507,
+            "wrong_saved_normal": {
+              "count": 12,
+              "ids": [
+                "seed2-007",
+                "seed2-041",
+                "seed2-044",
+                "seed2-056",
+                "seed2-080",
+                "seed2-083",
+                "seed2-091",
+                "seed2-093",
+                "seed2-094",
+                "seed2-095",
+                "seed2-096",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 43,
+              "ids": [
+                "seed2-061",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-110",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "asked_400": {
+              "count": 0,
+              "ids": []
+            },
+            "credit_wrongly_confirmed": {
+              "count": 1,
+              "ids": [
+                "seed2-061"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          },
+          "C_validated": {
+            "transaction_exact": {
+              "correct": 81,
+              "total": 93,
+              "rate": 0.870968
+            },
+            "amount_exact": {
+              "correct": 115,
+              "total": 119,
+              "rate": 0.966387
+            },
+            "required_f1": 0.959507,
+            "wrong_saved_normal": {
+              "count": 5,
+              "ids": [
+                "seed2-056",
+                "seed2-083",
+                "seed2-094",
+                "seed2-095",
+                "seed2-098"
+              ]
+            },
+            "saved_without_asking": {
+              "count": 2,
+              "ids": [
+                "seed2-061",
+                "seed2-110"
+              ]
+            },
+            "asked_400": {
+              "count": 48,
+              "ids": [
+                "seed2-007",
+                "seed2-041",
+                "seed2-044",
+                "seed2-080",
+                "seed2-091",
+                "seed2-093",
+                "seed2-096",
+                "seed2-099",
+                "seed2-100",
+                "seed2-101",
+                "seed2-102",
+                "seed2-103",
+                "seed2-104",
+                "seed2-105",
+                "seed2-106",
+                "seed2-107",
+                "seed2-108",
+                "seed2-109",
+                "seed2-111",
+                "seed2-112",
+                "seed2-113",
+                "seed2-114",
+                "seed2-115",
+                "seed2-116",
+                "seed2-117",
+                "seed2-118",
+                "seed2-119",
+                "seed2-120",
+                "seed2-121",
+                "seed2-122",
+                "seed2-123",
+                "seed2-124",
+                "seed2-125",
+                "seed2-126",
+                "seed2-127",
+                "seed2-128",
+                "seed2-129",
+                "seed2-130",
+                "seed2-131",
+                "seed2-132",
+                "seed2-133",
+                "seed2-134",
+                "seed2-135",
+                "seed2-136",
+                "seed2-137",
+                "seed2-138",
+                "seed2-139",
+                "seed2-140"
+              ]
+            },
+            "credit_wrongly_confirmed": {
+              "count": 1,
+              "ids": [
+                "seed2-061"
+              ]
+            },
+            "credit_flip_saved": {
+              "cash_to_credit": 0,
+              "credit_to_cash": 0,
+              "ids": {
+                "cash_to_credit": [],
+                "credit_to_cash": []
+              }
+            },
+            "generation_failed": 0
+          }
+        }
+      }
+    ]
+  }
+}

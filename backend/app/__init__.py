@@ -1,0 +1,1 @@
+"""EchoBill FastAPI application package."""

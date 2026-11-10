@@ -1,0 +1,97 @@
+{
+  "group_prefix": "gpt-4o-mini-20261002-162114-kst",
+  "conditions": [
+    {
+      "tag": "p0-off",
+      "overrides": {
+        "ko_numeral_normalize": false
+      }
+    },
+    {
+      "tag": "p0-on",
+      "overrides": {
+        "ko_numeral_normalize": true
+      }
+    },
+    {
+      "tag": "p21-on",
+      "overrides": {
+        "ko_numeral_normalize": true,
+        "llm_system_prompt_file": "configs/prompts/parse_llm_system_v2.txt"
+      }
+    }
+  ],
+  "repeat": 3,
+  "order": [
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-off-r1",
+      "tag": "p0-off",
+      "repeat_index": 1,
+      "started_at": "2026-10-02T16:21:14+09:00",
+      "finished_at": "2026-10-02T16:23:01+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-on-r1",
+      "tag": "p0-on",
+      "repeat_index": 1,
+      "started_at": "2026-10-02T16:23:01+09:00",
+      "finished_at": "2026-10-02T16:24:42+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p21-on-r1",
+      "tag": "p21-on",
+      "repeat_index": 1,
+      "started_at": "2026-10-02T16:24:42+09:00",
+      "finished_at": "2026-10-02T16:26:28+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-off-r2",
+      "tag": "p0-off",
+      "repeat_index": 2,
+      "started_at": "2026-10-02T16:26:28+09:00",
+      "finished_at": "2026-10-02T16:28:10+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-on-r2",
+      "tag": "p0-on",
+      "repeat_index": 2,
+      "started_at": "2026-10-02T16:28:10+09:00",
+      "finished_at": "2026-10-02T16:29:54+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p21-on-r2",
+      "tag": "p21-on",
+      "repeat_index": 2,
+      "started_at": "2026-10-02T16:29:54+09:00",
+      "finished_at": "2026-10-02T16:31:37+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-off-r3",
+      "tag": "p0-off",
+      "repeat_index": 3,
+      "started_at": "2026-10-02T16:31:37+09:00",
+      "finished_at": "2026-10-02T16:33:27+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p0-on-r3",
+      "tag": "p0-on",
+      "repeat_index": 3,
+      "started_at": "2026-10-02T16:33:27+09:00",
+      "finished_at": "2026-10-02T16:35:12+09:00"
+    },
+    {
+      "run_id": "gpt-4o-mini-20261002-162114-kst-p21-on-r3",
+      "tag": "p21-on",
+      "repeat_index": 3,
+      "started_at": "2026-10-02T16:35:12+09:00",
+      "finished_at": "2026-10-02T16:36:58+09:00"
+    }
+  ],
+  "representative_run_ids": {
+    "p0-off": "gpt-4o-mini-20261002-162114-kst-p0-off-r3",
+    "p0-on": "gpt-4o-mini-20261002-162114-kst-p0-on-r1",
+    "p21-on": "gpt-4o-mini-20261002-162114-kst-p21-on-r1"
+  },
+  "git_commit": "c00b054cdb1109ccecc1e3abdaf185b57f439d7b",
+  "git_dirty": false
+}

@@ -1,0 +1,19 @@
+# 직접 쓰는 패키지 목록(범위). 수정 후 잠금 파일 재생성:
+#   uv pip compile requirements.in --universal --python-version 3.12 --generate-hashes -o requirements.txt
+
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+sqlalchemy>=2.1  # 2.1부터 postgresql:// 기본 드라이버가 psycopg(3)
+PyJWT>=2.8  # python-jose 대체 — jose는 관리 중단·ecdsa 취약점 의존 (PM #15)
+cryptography>=42  # 사업자번호 Fernet 암호화
+python-multipart>=0.0.12
+httpx>=0.27.0
+alembic>=1.13  # 운영 DB 스키마 마이그레이션 (deploy.md §6)
+psycopg[binary]>=3.2  # Railway PostgreSQL — SQLAlchemy 2.1+ postgresql:// 기본 드라이버
+openai>=1.54.0,<3.0.0
+imageio-ffmpeg>=0.5  # 녹음 형식 변환(webm·mp4 → wav) — CLOVA 단문은 webm·mp4를 받지 않음. ffmpeg 실행 파일을 휠로 받아 Docker 변경 없이 (PM 10/19)
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+tzdata; sys_platform == "win32"  # Windows 파이썬엔 시간대 데이터가 없어 ZoneInfo("Asia/Seoul") 실패 (리눅스·macOS는 OS 데이터 사용)

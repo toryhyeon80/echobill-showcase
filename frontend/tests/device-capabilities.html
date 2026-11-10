@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>EchoBill 실험 G 기능 확인</title>
+<style>
+  body { max-width: 42rem; margin: auto; padding: 24px; font: 18px/1.6 system-ui; color: #191f28; word-break: keep-all; }
+  button { min-height: 48px; padding: 12px 20px; font: inherit; }
+  textarea { box-sizing: border-box; width: 100%; min-height: 18rem; margin-top: 20px; font: 16px/1.5 monospace; }
+</style>
+<h1>실험 G · 기기 기능 확인</h1>
+<p>개발용 점검 페이지입니다. 아이폰·갤럭시 카톡에서 각각 확인해 주세요.</p>
+<p>마이크를 열거나 음성을 보내지 않습니다. 한국어 언어팩·모델을 설치하지 않습니다. 결과는 이 화면에만 표시됩니다.</p>
+<button id="check">이 브라우저 확인하기</button>
+<p id="status" role="status">아직 확인하지 않았어요.</p>
+<label for="result">확인 결과</label>
+<textarea id="result" readonly></textarea>
+<p>기능이 있어도 한국어 인식 정확도·휴대폰 속도를 통과했다는 뜻은 아닙니다. PC 결과는 휴대폰 결과와 구분해 주세요.</p>
+<script type="module">
+  const button = document.querySelector('#check');
+  const status = document.querySelector('#status');
+  const output = document.querySelector('#result');
+  /** Bound optional browser probes without recording, downloads or a remote fallback. */
+  async function probe(run) {
+    let timer;
+    try {
+      return await Promise.race([Promise.resolve().then(run), new Promise(resolve => {
+        timer = setTimeout(() => resolve('timeout'), 3000);
+      })]);
+    } catch { return 'blocked-or-failed'; }
+    finally { clearTimeout(timer); }
+  }
+  button.addEventListener('click', async () => {
+    button.disabled = true; status.textContent = '확인 중이에요…';
+    const Recognition = window.SpeechRecognition ?? window.webkitSpeechRecognition;
+    const localCheck = Recognition && 'processLocally' in Recognition.prototype && typeof Recognition.available === 'function';
+    const [korean, gpu] = await Promise.all([
+      localCheck ? probe(() => Recognition.available({ langs: ['ko-KR'], processLocally: true, quality: 'dictation' })) : 'unverifiable',
+      navigator.gpu ? probe(async () => await navigator.gpu.requestAdapter() ? 'adapter-available' : 'no-adapter') : 'unsupported',
+    ]);
+    output.value = JSON.stringify({ checked_at: new Date().toISOString(), secure_context: window.isSecureContext,
+      media_recorder: typeof MediaRecorder !== 'undefined', microphone_api: !!navigator.mediaDevices?.getUserMedia,
+      web_audio: !!(window.AudioContext ?? window.webkitAudioContext), speech_api: !!Recognition,
+      korean_on_device_dictation: korean, webgpu: gpu }, null, 2);
+    status.textContent = '확인했어요. 아래 결과와 기기·OS·카톡 버전을 결과표에 기록해 주세요.';
+    button.disabled = false;
+  });
+</script>
+</html>

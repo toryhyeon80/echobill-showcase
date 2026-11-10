@@ -1,0 +1,1656 @@
+{
+ "run_ids": {
+  "mini": [
+   "dl11-20261008-154020-kst-pass1-mini-r1",
+   "dl11-20261008-154020-kst-pass2-mini-r1",
+   "dl11-20261008-154020-kst-pass2-mini-r2"
+  ],
+  "m41": [
+   "dl11-20261008-154020-kst-pass1-m41-r1",
+   "dl11-20261008-154020-kst-pass2-m41-r1",
+   "dl11-20261008-154020-kst-pass2-m41-r2"
+  ],
+  "gem": [
+   "dl11-20261008-154020-kst-pass1-gem-r1",
+   "dl11-20261008-154020-kst-pass2-gem-r1",
+   "dl11-20261008-154020-kst-pass2-gem-r2"
+  ]
+ },
+ "representative": {
+  "mini": "dl11-20261008-154020-kst-pass2-mini-r1",
+  "m41": "dl11-20261008-154020-kst-pass2-m41-r1",
+  "gem": "dl11-20261008-154020-kst-pass2-gem-r1"
+ },
+ "points": {
+  "mini": [
+   {
+    "run_id": "dl11-20261008-154020-kst-pass1-mini-r1",
+    "response_models": [
+     "gpt-4o-mini-2024-07-18"
+    ],
+    "executed_at": "2026-10-08T15:42:03+09:00",
+    "transaction_correct": 40,
+    "transaction_total": 42,
+    "amount_correct": 55,
+    "amount_total": 56,
+    "required_f1_pct": 98.78,
+    "appropriate_correct": 9,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-049"
+    ],
+    "latency_p50": 1321,
+    "latency_p95": 2300,
+    "latency_max": 3730,
+    "over_deadline": 0,
+    "over_deadline_rate": 0.0,
+    "rule_fallback_ids": [],
+    "errors": [],
+    "tokens_in": 28575,
+    "tokens_out": 3539,
+    "cost_usd": 0.00640965,
+    "cost_per_call_usd": 0.0001068275,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [
+      "g-dev-013"
+     ],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [
+     "g-dev-057"
+    ],
+    "raw_invented_credit_ids": [
+     "g-dev-004",
+     "g-dev-009",
+     "g-dev-034"
+    ]
+   },
+   {
+    "run_id": "dl11-20261008-154020-kst-pass2-mini-r1",
+    "response_models": [
+     "gpt-4o-mini-2024-07-18"
+    ],
+    "executed_at": "2026-10-08T15:49:51+09:00",
+    "transaction_correct": 39,
+    "transaction_total": 42,
+    "amount_correct": 54,
+    "amount_total": 56,
+    "required_f1_pct": 98.37,
+    "appropriate_correct": 9,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-049"
+    ],
+    "latency_p50": 1246,
+    "latency_p95": 1948,
+    "latency_max": 3368,
+    "over_deadline": 0,
+    "over_deadline_rate": 0.0,
+    "rule_fallback_ids": [],
+    "errors": [],
+    "tokens_in": 28575,
+    "tokens_out": 3539,
+    "cost_usd": 0.00640965,
+    "cost_per_call_usd": 0.0001068275,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [
+     "g-dev-057"
+    ],
+    "raw_invented_credit_ids": [
+     "g-dev-004",
+     "g-dev-009",
+     "g-dev-034"
+    ]
+   },
+   {
+    "run_id": "dl11-20261008-154020-kst-pass2-mini-r2",
+    "response_models": [
+     "gpt-4o-mini-2024-07-18"
+    ],
+    "executed_at": "2026-10-08T15:57:13+09:00",
+    "transaction_correct": 38,
+    "transaction_total": 42,
+    "amount_correct": 53,
+    "amount_total": 56,
+    "required_f1_pct": 97.97,
+    "appropriate_correct": 9,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-049"
+    ],
+    "latency_p50": 1241,
+    "latency_p95": 1713,
+    "latency_max": 2092,
+    "over_deadline": 0,
+    "over_deadline_rate": 0.0,
+    "rule_fallback_ids": [],
+    "errors": [],
+    "tokens_in": 28575,
+    "tokens_out": 3537,
+    "cost_usd": 0.00640845,
+    "cost_per_call_usd": 0.0001068075,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [
+     "g-dev-057"
+    ],
+    "raw_invented_credit_ids": [
+     "g-dev-004",
+     "g-dev-034"
+    ]
+   }
+  ],
+  "m41": [
+   {
+    "run_id": "dl11-20261008-154020-kst-pass1-m41-r1",
+    "response_models": [
+     "gpt-4.1-mini-2025-04-14"
+    ],
+    "executed_at": "2026-10-08T15:43:07+09:00",
+    "transaction_correct": 31,
+    "transaction_total": 42,
+    "amount_correct": 45,
+    "amount_total": 56,
+    "required_f1_pct": 96.28,
+    "appropriate_correct": 9,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-013",
+     "g-dev-014",
+     "g-dev-017",
+     "g-dev-018",
+     "g-dev-024",
+     "g-dev-028",
+     "g-dev-032",
+     "g-dev-048"
+    ],
+    "latency_p50": 977,
+    "latency_p95": 1495,
+    "latency_max": 1674,
+    "over_deadline": 0,
+    "over_deadline_rate": 0.0,
+    "rule_fallback_ids": [],
+    "errors": [],
+    "tokens_in": 28575,
+    "tokens_out": 3504,
+    "cost_usd": 0.0170364,
+    "cost_per_call_usd": 0.00028394,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [],
+    "raw_invented_credit_ids": []
+   },
+   {
+    "run_id": "dl11-20261008-154020-kst-pass2-m41-r1",
+    "response_models": [
+     "gpt-4.1-mini-2025-04-14"
+    ],
+    "executed_at": "2026-10-08T15:50:55+09:00",
+    "transaction_correct": 30,
+    "transaction_total": 42,
+    "amount_correct": 44,
+    "amount_total": 56,
+    "required_f1_pct": 96.07,
+    "appropriate_correct": 8,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-013",
+     "g-dev-014",
+     "g-dev-017",
+     "g-dev-018",
+     "g-dev-024",
+     "g-dev-028",
+     "g-dev-032",
+     "g-dev-033",
+     "g-dev-048",
+     "g-dev-049"
+    ],
+    "latency_p50": 996,
+    "latency_p95": 1278,
+    "latency_max": 1646,
+    "over_deadline": 0,
+    "over_deadline_rate": 0.0,
+    "rule_fallback_ids": [],
+    "errors": [],
+    "tokens_in": 28575,
+    "tokens_out": 3477,
+    "cost_usd": 0.0169932,
+    "cost_per_call_usd": 0.00028322,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [],
+    "raw_invented_credit_ids": []
+   },
+   {
+    "run_id": "dl11-20261008-154020-kst-pass2-m41-r2",
+    "response_models": [
+     "gpt-4.1-mini-2025-04-14"
+    ],
+    "executed_at": "2026-10-08T15:58:17+09:00",
+    "transaction_correct": 29,
+    "transaction_total": 42,
+    "amount_correct": 44,
+    "amount_total": 56,
+    "required_f1_pct": 95.85,
+    "appropriate_correct": 8,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-002",
+     "g-dev-013",
+     "g-dev-014",
+     "g-dev-017",
+     "g-dev-018",
+     "g-dev-024",
+     "g-dev-028",
+     "g-dev-032",
+     "g-dev-033",
+     "g-dev-048",
+     "g-dev-049"
+    ],
+    "latency_p50": 964,
+    "latency_p95": 1322,
+    "latency_max": 1771,
+    "over_deadline": 0,
+    "over_deadline_rate": 0.0,
+    "rule_fallback_ids": [],
+    "errors": [],
+    "tokens_in": 28575,
+    "tokens_out": 3501,
+    "cost_usd": 0.0170316,
+    "cost_per_call_usd": 0.00028386000000000004,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [],
+    "raw_invented_credit_ids": []
+   }
+  ],
+  "gem": [
+   {
+    "run_id": "dl11-20261008-154020-kst-pass1-gem-r1",
+    "response_models": [
+     "gemini-3.1-flash-lite"
+    ],
+    "executed_at": "2026-10-08T15:48:03+09:00",
+    "transaction_correct": 39,
+    "transaction_total": 42,
+    "amount_correct": 54,
+    "amount_total": 56,
+    "required_f1_pct": 97.94,
+    "appropriate_correct": 7,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-024"
+    ],
+    "latency_p50": 1348,
+    "latency_p95": 2003,
+    "latency_max": 3373,
+    "over_deadline": 2,
+    "over_deadline_rate": 0.033333,
+    "rule_fallback_ids": [
+     "g-dev-049",
+     "g-dev-057"
+    ],
+    "errors": [
+     "LLMTimeoutError: over_deadline (5s)"
+    ],
+    "tokens_in": 12471,
+    "tokens_out": 6918,
+    "cost_usd": 0.01349475,
+    "cost_per_call_usd": 0.00023266810344827585,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [],
+    "raw_invented_credit_ids": []
+   },
+   {
+    "run_id": "dl11-20261008-154020-kst-pass2-gem-r1",
+    "response_models": [
+     "gemini-3.1-flash-lite"
+    ],
+    "executed_at": "2026-10-08T15:55:52+09:00",
+    "transaction_correct": 34,
+    "transaction_total": 42,
+    "amount_correct": 45,
+    "amount_total": 56,
+    "required_f1_pct": 90.67,
+    "appropriate_correct": 5,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-024"
+    ],
+    "latency_p50": 1377,
+    "latency_p95": 1974,
+    "latency_max": 4293,
+    "over_deadline": 12,
+    "over_deadline_rate": 0.2,
+    "rule_fallback_ids": [
+     "g-dev-028",
+     "g-dev-030",
+     "g-dev-032",
+     "g-dev-034",
+     "g-dev-037",
+     "g-dev-038",
+     "g-dev-039",
+     "g-dev-040",
+     "g-dev-042",
+     "g-dev-045",
+     "g-dev-046",
+     "g-dev-057"
+    ],
+    "errors": [
+     "LLMTimeoutError: over_deadline (5s)"
+    ],
+    "tokens_in": 10395,
+    "tokens_out": 5867,
+    "cost_usd": 0.01139925,
+    "cost_per_call_usd": 0.00023748437499999998,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [],
+    "raw_invented_credit_ids": []
+   },
+   {
+    "run_id": "dl11-20261008-154020-kst-pass2-gem-r2",
+    "response_models": [
+     "gemini-3.1-flash-lite"
+    ],
+    "executed_at": "2026-10-08T16:03:16+09:00",
+    "transaction_correct": 18,
+    "transaction_total": 42,
+    "amount_correct": 28,
+    "amount_total": 56,
+    "required_f1_pct": 62.6,
+    "appropriate_correct": 5,
+    "appropriate_total": 18,
+    "credit_wrongly_confirmed_ids": [],
+    "normal_rejected_400_ids": [
+     "g-dev-024"
+    ],
+    "latency_p50": 1412,
+    "latency_p95": 4419,
+    "latency_max": 4667,
+    "over_deadline": 27,
+    "over_deadline_rate": 0.45,
+    "rule_fallback_ids": [
+     "g-dev-001",
+     "g-dev-002",
+     "g-dev-003",
+     "g-dev-004",
+     "g-dev-005",
+     "g-dev-009",
+     "g-dev-010",
+     "g-dev-011",
+     "g-dev-012",
+     "g-dev-013",
+     "g-dev-014",
+     "g-dev-015",
+     "g-dev-016",
+     "g-dev-017",
+     "g-dev-019",
+     "g-dev-021",
+     "g-dev-022",
+     "g-dev-025",
+     "g-dev-026",
+     "g-dev-029",
+     "g-dev-031",
+     "g-dev-033",
+     "g-dev-040",
+     "g-dev-042",
+     "g-dev-053",
+     "g-dev-054",
+     "g-dev-059"
+    ],
+    "errors": [
+     "LLMTimeoutError: over_deadline (5s)"
+    ],
+    "tokens_in": 7173,
+    "tokens_out": 3935,
+    "cost_usd": 0.00769575,
+    "cost_per_call_usd": 0.00023320454545454548,
+    "postprocess_version": "pp-1.3",
+    "postprocess_fixed": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "postprocess_broken": {
+     "transaction_exact": [],
+     "amount_exact": []
+    },
+    "raw_invented_total_ids": [],
+    "raw_invented_credit_ids": []
+   }
+  ]
+ },
+ "groups": {
+  "mini": {
+   "group_id": "dl11-20261008-154020-kst-mini",
+   "runs": [
+    {
+     "run_id": "dl11-20261008-154020-kst-pass1-mini-r1",
+     "transaction_correct": 40,
+     "amount_correct": 55,
+     "required_f1_pct": 98.7805,
+     "over_deadline_rate": 0.0
+    },
+    {
+     "run_id": "dl11-20261008-154020-kst-pass2-mini-r1",
+     "transaction_correct": 39,
+     "amount_correct": 54,
+     "required_f1_pct": 98.374,
+     "over_deadline_rate": 0.0
+    },
+    {
+     "run_id": "dl11-20261008-154020-kst-pass2-mini-r2",
+     "transaction_correct": 38,
+     "amount_correct": 53,
+     "required_f1_pct": 97.9675,
+     "over_deadline_rate": 0.0
+    }
+   ],
+   "median_run_id": "dl11-20261008-154020-kst-pass2-mini-r1",
+   "spread": {
+    "transaction_correct": 2,
+    "amount_correct": 2,
+    "required_f1_pct": 0.813
+   },
+   "unstable_record_ids": [
+    "g-dev-013",
+    "g-dev-025"
+   ],
+   "response_models": [
+    "gpt-4o-mini-2024-07-18"
+   ],
+   "unstable_ids_with_appropriateness": [
+    "g-dev-013",
+    "g-dev-025"
+   ],
+   "answer_changed_ids": [
+    "g-dev-013",
+    "g-dev-025"
+   ]
+  },
+  "m41": {
+   "group_id": "dl11-20261008-154020-kst-m41",
+   "runs": [
+    {
+     "run_id": "dl11-20261008-154020-kst-pass1-m41-r1",
+     "transaction_correct": 31,
+     "amount_correct": 45,
+     "required_f1_pct": 96.281,
+     "over_deadline_rate": 0.0
+    },
+    {
+     "run_id": "dl11-20261008-154020-kst-pass2-m41-r1",
+     "transaction_correct": 30,
+     "amount_correct": 44,
+     "required_f1_pct": 96.0663,
+     "over_deadline_rate": 0.0
+    },
+    {
+     "run_id": "dl11-20261008-154020-kst-pass2-m41-r2",
+     "transaction_correct": 29,
+     "amount_correct": 44,
+     "required_f1_pct": 95.8506,
+     "over_deadline_rate": 0.0
+    }
+   ],
+   "median_run_id": "dl11-20261008-154020-kst-pass2-m41-r1",
+   "spread": {
+    "transaction_correct": 2,
+    "amount_correct": 1,
+    "required_f1_pct": 0.4304
+   },
+   "unstable_record_ids": [
+    "g-dev-002",
+    "g-dev-004",
+    "g-dev-020",
+    "g-dev-033"
+   ],
+   "response_models": [
+    "gpt-4.1-mini-2025-04-14"
+   ],
+   "unstable_ids_with_appropriateness": [
+    "g-dev-002",
+    "g-dev-004",
+    "g-dev-020",
+    "g-dev-033",
+    "g-dev-056",
+    "g-dev-060"
+   ],
+   "answer_changed_ids": [
+    "g-dev-002",
+    "g-dev-004",
+    "g-dev-020",
+    "g-dev-026",
+    "g-dev-033",
+    "g-dev-035",
+    "g-dev-049",
+    "g-dev-056",
+    "g-dev-060"
+   ]
+  },
+  "gem": {
+   "group_id": "dl11-20261008-154020-kst-gem",
+   "runs": [
+    {
+     "run_id": "dl11-20261008-154020-kst-pass1-gem-r1",
+     "transaction_correct": 39,
+     "amount_correct": 54,
+     "required_f1_pct": 97.9424,
+     "over_deadline_rate": 0.033333
+    },
+    {
+     "run_id": "dl11-20261008-154020-kst-pass2-gem-r1",
+     "transaction_correct": 34,
+     "amount_correct": 45,
+     "required_f1_pct": 90.6667,
+     "over_deadline_rate": 0.2
+    },
+    {
+     "run_id": "dl11-20261008-154020-kst-pass2-gem-r2",
+     "transaction_correct": 18,
+     "amount_correct": 28,
+     "required_f1_pct": 62.6039,
+     "over_deadline_rate": 0.45
+    }
+   ],
+   "median_run_id": "dl11-20261008-154020-kst-pass2-gem-r1",
+   "spread": {
+    "transaction_correct": 21,
+    "amount_correct": 26,
+    "required_f1_pct": 35.3385
+   },
+   "unstable_record_ids": [
+    "g-dev-001",
+    "g-dev-002",
+    "g-dev-003",
+    "g-dev-004",
+    "g-dev-005",
+    "g-dev-009",
+    "g-dev-010",
+    "g-dev-011",
+    "g-dev-012",
+    "g-dev-013",
+    "g-dev-014",
+    "g-dev-015",
+    "g-dev-016",
+    "g-dev-017",
+    "g-dev-019",
+    "g-dev-021",
+    "g-dev-022",
+    "g-dev-025",
+    "g-dev-026",
+    "g-dev-028",
+    "g-dev-029",
+    "g-dev-030",
+    "g-dev-031",
+    "g-dev-032",
+    "g-dev-033",
+    "g-dev-034",
+    "g-dev-037",
+    "g-dev-039",
+    "g-dev-040",
+    "g-dev-042",
+    "g-dev-045",
+    "g-dev-046",
+    "g-dev-049",
+    "g-dev-053",
+    "g-dev-054",
+    "g-dev-059"
+   ],
+   "response_models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "unstable_ids_with_appropriateness": [
+    "g-dev-001",
+    "g-dev-002",
+    "g-dev-003",
+    "g-dev-004",
+    "g-dev-005",
+    "g-dev-009",
+    "g-dev-010",
+    "g-dev-011",
+    "g-dev-012",
+    "g-dev-013",
+    "g-dev-014",
+    "g-dev-015",
+    "g-dev-016",
+    "g-dev-017",
+    "g-dev-019",
+    "g-dev-021",
+    "g-dev-022",
+    "g-dev-025",
+    "g-dev-026",
+    "g-dev-028",
+    "g-dev-029",
+    "g-dev-030",
+    "g-dev-031",
+    "g-dev-032",
+    "g-dev-033",
+    "g-dev-034",
+    "g-dev-037",
+    "g-dev-038",
+    "g-dev-039",
+    "g-dev-040",
+    "g-dev-042",
+    "g-dev-045",
+    "g-dev-046",
+    "g-dev-049",
+    "g-dev-053",
+    "g-dev-054",
+    "g-dev-057",
+    "g-dev-059"
+   ],
+   "answer_changed_ids": [
+    "g-dev-001",
+    "g-dev-002",
+    "g-dev-003",
+    "g-dev-004",
+    "g-dev-005",
+    "g-dev-009",
+    "g-dev-010",
+    "g-dev-011",
+    "g-dev-012",
+    "g-dev-013",
+    "g-dev-014",
+    "g-dev-015",
+    "g-dev-016",
+    "g-dev-017",
+    "g-dev-019",
+    "g-dev-021",
+    "g-dev-022",
+    "g-dev-025",
+    "g-dev-026",
+    "g-dev-028",
+    "g-dev-029",
+    "g-dev-030",
+    "g-dev-031",
+    "g-dev-032",
+    "g-dev-033",
+    "g-dev-034",
+    "g-dev-037",
+    "g-dev-038",
+    "g-dev-039",
+    "g-dev-040",
+    "g-dev-042",
+    "g-dev-045",
+    "g-dev-046",
+    "g-dev-049",
+    "g-dev-053",
+    "g-dev-054",
+    "g-dev-057",
+    "g-dev-059"
+   ]
+  }
+ },
+ "model_disagree": [
+  {
+   "id": "g-dev-004",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     true
+    ],
+    "m41": [
+     null,
+     false,
+     false
+    ],
+    "gem": [
+     null,
+     true,
+     false
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-007",
+   "correct": {
+    "mini": [
+     null,
+     false,
+     false
+    ],
+    "m41": [
+     null,
+     true,
+     false
+    ],
+    "gem": [
+     null,
+     true,
+     true
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-013",
+   "correct": {
+    "mini": [
+     false,
+     false,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-014",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-017",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-018",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-020",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     false
+    ],
+    "m41": [
+     null,
+     true,
+     true
+    ],
+    "gem": [
+     null,
+     true,
+     true
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-024",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     false,
+     false,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-025",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-026",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     false
+    ],
+    "m41": [
+     null,
+     true,
+     false
+    ],
+    "gem": [
+     null,
+     true,
+     false
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-028",
+   "correct": {
+    "mini": [
+     false,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     true,
+     null
+    ],
+    "gem": [
+     false,
+     false,
+     null
+    ]
+   },
+   "timeout": [
+    "gem"
+   ]
+  },
+  {
+   "id": "g-dev-032",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     false,
+     false,
+     null
+    ]
+   },
+   "timeout": [
+    "gem"
+   ]
+  },
+  {
+   "id": "g-dev-033",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-034",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     true
+    ],
+    "m41": [
+     null,
+     false,
+     false
+    ],
+    "gem": [
+     null,
+     false,
+     false
+    ]
+   },
+   "timeout": [
+    "gem"
+   ]
+  },
+  {
+   "id": "g-dev-035",
+   "correct": {
+    "mini": [
+     null,
+     null,
+     false
+    ],
+    "m41": [
+     null,
+     null,
+     false
+    ],
+    "gem": [
+     null,
+     null,
+     false
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-036",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     true
+    ],
+    "m41": [
+     null,
+     true,
+     true
+    ],
+    "gem": [
+     null,
+     true,
+     false
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-037",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     false
+    ],
+    "m41": [
+     null,
+     true,
+     false
+    ],
+    "gem": [
+     null,
+     false,
+     false
+    ]
+   },
+   "timeout": [
+    "gem"
+   ]
+  },
+  {
+   "id": "g-dev-039",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     false
+    ],
+    "m41": [
+     null,
+     true,
+     true
+    ],
+    "gem": [
+     null,
+     false,
+     false
+    ]
+   },
+   "timeout": [
+    "gem"
+   ]
+  },
+  {
+   "id": "g-dev-046",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     false,
+     false,
+     null
+    ]
+   },
+   "timeout": [
+    "gem"
+   ]
+  },
+  {
+   "id": "g-dev-048",
+   "correct": {
+    "mini": [
+     true,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     false,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-049",
+   "correct": {
+    "mini": [
+     false,
+     true,
+     null
+    ],
+    "m41": [
+     false,
+     true,
+     null
+    ],
+    "gem": [
+     true,
+     true,
+     null
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-055",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     true
+    ],
+    "m41": [
+     null,
+     true,
+     true
+    ],
+    "gem": [
+     null,
+     true,
+     false
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-056",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     true
+    ],
+    "m41": [
+     null,
+     true,
+     false
+    ],
+    "gem": [
+     null,
+     true,
+     false
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-057",
+   "correct": {
+    "mini": [
+     null,
+     null,
+     false
+    ],
+    "m41": [
+     null,
+     null,
+     false
+    ],
+    "gem": [
+     null,
+     null,
+     false
+    ]
+   },
+   "timeout": [
+    "gem"
+   ]
+  },
+  {
+   "id": "g-dev-058",
+   "correct": {
+    "mini": [
+     null,
+     null,
+     true
+    ],
+    "m41": [
+     null,
+     null,
+     false
+    ],
+    "gem": [
+     null,
+     null,
+     false
+    ]
+   },
+   "timeout": []
+  },
+  {
+   "id": "g-dev-060",
+   "correct": {
+    "mini": [
+     null,
+     true,
+     false
+    ],
+    "m41": [
+     null,
+     true,
+     true
+    ],
+    "gem": [
+     null,
+     true,
+     false
+    ]
+   },
+   "timeout": []
+  }
+ ],
+ "same_answer_wrong": [],
+ "all_models_wrong": [
+  {
+   "id": "g-dev-026",
+   "expected_outcome": "추가 확인 필요",
+   "expected_error_code": "MISSING_REQUIRED_FIELD",
+   "required_clarifications": [
+    "items[1].qty"
+   ],
+   "expected_core": {
+    "counterparty": "철수씨 가게",
+    "total_amount": 35000.0,
+    "credit": true,
+    "items": [
+     [
+      "고추",
+      null
+     ],
+     [
+      "마늘",
+      1.0
+     ]
+    ]
+   },
+   "answers": {
+    "mini": [
+     "{\"counterparty\": \"철수씨 가게\", \"credit\": true, \"items\": [[\"고추 햇반\", 1.0], [\"마늘\", 1.0]], \"total_amount\": 35000.0}"
+    ],
+    "m41": [
+     "{\"code\": \"MISSING_REQUIRED_FIELD\", \"fields\": [\"items[1].qty\"], \"partial\": {\"counterparty\": \"철수씨 가게\", \"credit\": true, \"items\": [[\"고추 햇반접\", null], [\"마늘\", 1.0]], \"total_amount\": 35000.0}}",
+     "{\"counterparty\": \"철수씨 가게\", \"credit\": true, \"items\": [[\"고추 햇반\", 1.0], [\"마늘\", 1.0]], \"total_amount\": 35000.0}"
+    ],
+    "gem": [
+     "{\"counterparty\": \"철수씨 가게\", \"credit\": true, \"items\": [[\"고추\", 1.0], [\"마늘\", 1.0]], \"total_amount\": 35000.0}"
+    ]
+   }
+  },
+  {
+   "id": "g-dev-028",
+   "expected_outcome": "정상 구조화 가능",
+   "expected_error_code": null,
+   "required_clarifications": [],
+   "expected_core": {
+    "counterparty": "분식왕",
+    "total_amount": 22000.0,
+    "credit": false,
+    "items": [
+     [
+      "떡볶이재료",
+      1.0
+     ]
+    ]
+   },
+   "answers": {
+    "mini": [
+     "{\"counterparty\": \"분식왕\", \"credit\": false, \"items\": [[\"떡볶이재료 세트\", 1.0]], \"total_amount\": 22000.0}"
+    ],
+    "m41": [
+     "{\"code\": \"MISSING_REQUIRED_FIELD\", \"fields\": [\"items[0].qty\"], \"partial\": {\"counterparty\": \"분식왕\", \"credit\": false, \"items\": [[\"떡볶이재료 세트\", null]], \"total_amount\": 22000.0}}"
+    ],
+    "gem": [
+     "{\"counterparty\": \"분식왕\", \"credit\": false, \"items\": [[\"떡볶이재료 세트\", 1.0]], \"total_amount\": 22000.0}"
+    ]
+   }
+  },
+  {
+   "id": "g-dev-035",
+   "expected_outcome": "추가 확인 필요",
+   "expected_error_code": "MULTIPLE_COUNTERPARTIES_DETECTED",
+   "required_clarifications": [
+    "counterparty"
+   ],
+   "expected_core": {
+    "counterparty": null,
+    "total_amount": null,
+    "credit": true,
+    "items": []
+   },
+   "answers": {
+    "mini": [
+     "{\"code\": \"MISSING_REQUIRED_FIELD\", \"fields\": [\"items[0].qty\", \"items[1].qty\"], \"partial\": {\"counterparty\": \"김씨네\", \"credit\": true, \"items\": [[\"배추\", null], [\"사과\", null]], \"total_amount\": 40000.0}}"
+    ],
+    "m41": [
+     "{\"code\": \"MISSING_REQUIRED_FIELD\", \"fields\": [\"items[0].qty\", \"items[1].qty\", \"total_amount\"], \"partial\": {\"counterparty\": \"김씨네랑 영수네\", \"credit\": true, \"items\": [[\"배추\", null], [\"사과\", null]], \"total_amount\": null}}",
+     "{\"code\": \"MISSING_REQUIRED_FIELD\", \"fields\": [\"items[0].qty\", \"items[1].qty\"], \"partial\": {\"counterparty\": \"김씨네랑 영수네\", \"credit\": true, \"items\": [[\"배추\", null], [\"사과\", null]], \"total_amount\": 40000.0}}"
+    ],
+    "gem": [
+     "{\"code\": \"MISSING_REQUIRED_FIELD\", \"fields\": [\"items[0].qty\"], \"partial\": {\"counterparty\": \"김씨네\", \"credit\": true, \"items\": [[\"배추\", null]], \"total_amount\": 20000.0}}"
+    ]
+   }
+  },
+  {
+   "id": "g-dev-037",
+   "expected_outcome": "추가 확인 필요",
+   "expected_error_code": "AMOUNT_MISMATCH",
+   "required_clarifications": [
+    "items[0].qty",
+    "items[0].unit_price",
+    "total_amount"
+   ],
+   "expected_core": {
+    "counterparty": "한식당",
+    "total_amount": 50000.0,
+    "credit": true,
+    "items": [
+     [
+      "돼지고기",
+      3.0
+     ]
+    ]
+   },
+   "answers": {
+    "mini": [
+     "{\"code\": \"AMOUNT_MISMATCH\", \"fields\": [\"items[0].amount\", \"total_amount\"], \"partial\": {\"counterparty\": \"한식당\", \"credit\": true, \"items\": [[\"돼지고기\", 3.0]], \"total_amount\": 50000.0}}"
+    ],
+    "m41": [
+     "{\"counterparty\": \"한식당\", \"credit\": true, \"items\": [[\"돼지고기\", 3.0]], \"total_amount\": 50000.0}"
+    ],
+    "gem": [
+     "{\"code\": \"AMOUNT_MISMATCH\", \"fields\": [\"items[0].amount\", \"total_amount\"], \"partial\": {\"counterparty\": \"한식당\", \"credit\": true, \"items\": [[\"돼지고기\", 3.0]], \"total_amount\": 50000.0}}"
+    ]
+   }
+  }
+ ],
+ "invented": {
+  "mini": {
+   "raw": {
+    "total_amount": [
+     [
+      "g-dev-057"
+     ],
+     [
+      "g-dev-057"
+     ],
+     [
+      "g-dev-057"
+     ]
+    ],
+    "credit": [
+     [
+      "g-dev-004",
+      "g-dev-009",
+      "g-dev-034"
+     ],
+     [
+      "g-dev-004",
+      "g-dev-009",
+      "g-dev-034"
+     ],
+     [
+      "g-dev-004",
+      "g-dev-034"
+     ]
+    ]
+   },
+   "after_pp": [
+    {
+     "total_amount": [
+      "g-dev-057"
+     ],
+     "credit": []
+    },
+    {
+     "total_amount": [
+      "g-dev-057"
+     ],
+     "credit": []
+    },
+    {
+     "total_amount": [
+      "g-dev-057"
+     ],
+     "credit": []
+    }
+   ]
+  },
+  "m41": {
+   "raw": {
+    "total_amount": [
+     [],
+     [],
+     []
+    ],
+    "credit": [
+     [],
+     [],
+     []
+    ]
+   },
+   "after_pp": [
+    {
+     "total_amount": [],
+     "credit": []
+    },
+    {
+     "total_amount": [],
+     "credit": []
+    },
+    {
+     "total_amount": [],
+     "credit": []
+    }
+   ]
+  },
+  "gem": {
+   "raw": {
+    "total_amount": [
+     [],
+     [],
+     []
+    ],
+    "credit": [
+     [],
+     [],
+     []
+    ]
+   },
+   "after_pp": [
+    {
+     "total_amount": [],
+     "credit": []
+    },
+    {
+     "total_amount": [],
+     "credit": []
+    },
+    {
+     "total_amount": [],
+     "credit": []
+    }
+   ]
+  }
+ },
+ "rule": {
+  "transaction": {
+   "correct": 7,
+   "total": 42,
+   "rate": 0.166667
+  },
+  "amount": {
+   "correct": 39,
+   "total": 56,
+   "rate": 0.696429
+  },
+  "f1": 0.595556,
+  "appropriateness": {
+   "status": "complete",
+   "correct": 4,
+   "total": 18,
+   "rate": 0.222222,
+   "evaluated": 18,
+   "unavailable": 0
+  },
+  "credit_wrongly_confirmed": {
+   "count": 0,
+   "ids": []
+  }
+ },
+ "d02": {
+  "mini": {
+   "tx_rate": 0.9286,
+   "judge_a": "LLM 우위",
+   "a_detail": {
+    "amount": "우위",
+    "f1": "우위",
+    "transaction": "우위",
+    "appropriateness": "우위"
+   },
+   "qualified": true
+  },
+  "m41": {
+   "tx_rate": 0.7143,
+   "judge_a": "LLM 우위",
+   "a_detail": {
+    "amount": "우위",
+    "f1": "우위",
+    "transaction": "우위",
+    "appropriateness": "우위"
+   },
+   "qualified": false,
+   "m": {
+    "transaction": 2,
+    "amount": 2,
+    "appropriateness": 2
+   },
+   "delta_vs_mini": {
+    "transaction": -9,
+    "amount": -10,
+    "appropriateness": -1,
+    "credit_wrong": 0
+   },
+   "transaction_tier": "열위",
+   "b_cand_only": 0,
+   "c_mini_only": 9,
+   "mcnemar_p": 0.0039,
+   "reject": {
+    "amount_inferior": true,
+    "appropriateness_inferior": false,
+    "p95_over_4000": false,
+    "over_deadline_over_5pct": false,
+    "credit_wrong_more": false
+   },
+   "p95_ratio": 0.656,
+   "cost_ratio": 2.651,
+   "step": "①",
+   "verdict": "교체 안 함 (자격 미달)"
+  },
+  "gem": {
+   "tx_rate": 0.8095,
+   "judge_a": "동등",
+   "a_detail": {
+    "amount": "동등",
+    "f1": "동등",
+    "transaction": "우위",
+    "appropriateness": "동등"
+   },
+   "qualified": false,
+   "m": {
+    "transaction": 21,
+    "amount": 26,
+    "appropriateness": 2
+   },
+   "delta_vs_mini": {
+    "transaction": -5,
+    "amount": -9,
+    "appropriateness": -4,
+    "credit_wrong": 0
+   },
+   "transaction_tier": "동등",
+   "b_cand_only": 2,
+   "c_mini_only": 7,
+   "mcnemar_p": 0.1797,
+   "reject": {
+    "amount_inferior": false,
+    "appropriateness_inferior": true,
+    "p95_over_4000": false,
+    "over_deadline_over_5pct": true,
+    "credit_wrong_more": false
+   },
+   "p95_ratio": 1.013,
+   "cost_ratio": 1.778,
+   "step": "①",
+   "verdict": "교체 안 함 (자격 미달)"
+  }
+ }
+}
